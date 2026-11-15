@@ -40,7 +40,9 @@ def main(years):
         req = urllib.request.Request(URL.format(year=year), headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=60) as resp:
             events = json.load(resp).get("events", [])
-        done = [parse(e) for e in events if e["status"]["type"]["completed"]]
+        # un partido abandonado conserva su marcador oficial, así que también cuenta
+        done = [parse(e) for e in events
+                if e["status"]["type"]["completed"] or e["status"]["type"]["name"] == "STATUS_ABANDONED"]
         print(f"{year}: {len(done)} partidos terminados")
         matches += done
     OUT.parent.mkdir(parents=True, exist_ok=True)

@@ -3,6 +3,8 @@
 Plataforma de datos de punta a punta sobre la Liga BetPlay (2022–2026):
 ingesta → limpieza → PostgreSQL → API → modelo de predicción → simulación del título → dashboard.
 
+**API en vivo:** https://futbol-analytics-colombia.onrender.com/docs (el plan gratuito tarda cerca de un minuto en despertar)
+
 **Dashboard:** https://claude.ai/artifact/6uU9ckysdcN94UKCSGq687
 
 ![Probabilidad de llegar a la final y de ser campeón](docs/simulacion.png)
@@ -104,7 +106,7 @@ Con `DATABASE_URL=sqlite:///futbol.db` todo corre sin Docker.
 
 ## Despliegue y automatización
 
-- **API pública:** `Dockerfile` y `render.yaml` despliegan la API en Render. La imagen construye una base SQLite con
+- **API pública:** `Dockerfile` y `render.yaml` despliegan la API en Render, en https://futbol-analytics-colombia.onrender.com. La imagen construye una base SQLite con
   los datos del repositorio, así que no necesita un servidor de base de datos; en local se usa PostgreSQL.
 - **Actualización diaria:** el flujo de GitHub Actions descarga los partidos nuevos, reejecuta ETL, modelo y
   simulación, corre las pruebas y guarda los cambios. Con Render en despliegue automático, cada actualización
