@@ -36,6 +36,34 @@ def main():
                           "★ cabeza de serie con punto invisible", fontsize=8.5, color=MUTED)
     fig.subplots_adjust(left=0.2, right=0.98, top=0.86, bottom=0.03)
     fig.savefig(ROOT / "docs" / "simulacion.png", facecolor="white")
+    plt.close(fig)
+    social_card(d)
+
+
+def social_card(d):
+    """Imagen 1200x628 para la vista previa del enlace en redes (docs/og.png)."""
+    resumen = pd.read_csv(ROOT / "dashboard" / "data" / "resumen.csv")
+    corte = "/".join(reversed(str(resumen.hasta.iloc[0]).split("-")))
+    fig, ax = plt.subplots(figsize=(12, 6.28), dpi=100)
+    fig.patch.set_facecolor("#fbfaf6")
+    ax.set_facecolor("#fbfaf6")
+    y = range(len(d))
+    ax.barh(list(y), d.p_campeon, height=0.62, color=INK)
+    for i, r in zip(y, d.itertuples()):
+        ax.text(r.p_campeon + 0.5, i, f"{r.p_campeon:.1f} %".replace(".", ","), va="center", fontsize=17, color=INK,
+                fontweight="bold")
+    ax.set_yticks(list(y), [("★ " if r.cabeza == "sí" else "") + r.equipo for r in d.itertuples()], fontsize=17, color=INK)
+    ax.set_xlim(0, d.p_campeon.max() * 1.18)
+    ax.xaxis.set_visible(False)
+    for s in ax.spines.values():
+        s.set_visible(False)
+    ax.tick_params(length=0, pad=12)
+    n = f"{int(d.simulaciones.iloc[0]):,}".replace(",", ".")
+    fig.text(0.04, 0.9, "¿Quién será campeón de la Liga BetPlay?", fontsize=30, color=INK, fontfamily="serif")
+    fig.text(0.04, 0.825, f"Probabilidad de título en {n} simulaciones · datos al {corte} · ★ cabeza de serie",
+             fontsize=14.5, color=MUTED)
+    fig.subplots_adjust(left=0.24, right=0.97, top=0.76, bottom=0.05)
+    fig.savefig(ROOT / "docs" / "og.png", facecolor=fig.get_facecolor())
 
 
 if __name__ == "__main__":

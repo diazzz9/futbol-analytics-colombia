@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Liga BetPlay equipo por equipo · Fútbol Analytics Colombia</title>
 <meta name="description" content="Analítica de la Liga BetPlay 2022–2026: rendimiento por equipo, modelo de predicción y simulación del título.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diazzz9.github.io/futbol-analytics-colombia/dashboard/">
+<meta property="og:title" content="¿Quién será campeón de la Liga BetPlay? Lo que dicen los datos">
+<meta property="og:description" content="20.000 simulaciones de los cuadrangulares y la final, y la analítica de los 20 equipos desde 2022. Se actualiza todos los días.">
+<meta property="og:image" content="https://diazzz9.github.io/futbol-analytics-colombia/docs/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
+<meta property="og:locale" content="es_CO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="author" content="Daniel Julián Díaz Riaño">
 <style>
 :root{--bg:#fbfaf6;--fg:#1b1b1b;--muted:#66645e;--line:#dcd9d0;--chart-muted:#c8c5bb;--grid:#ebe8df;--pop:#ffffff;--ok:#1a7f37;--bad:#c62828;
   --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--serif:"Iowan Old Style","Palatino Linotype",Georgia,serif}
@@ -61,6 +71,7 @@ select{font:inherit;color:var(--fg);background:var(--pop);border:1px solid var(-
 .sf-table tr.sf-me td{font-weight:600;box-shadow:inset 0 -2px 0 var(--sf)}
 .sf-table tr.sf-me td:first-child{box-shadow:inset 4px 0 0 var(--sf),inset 8px 0 0 var(--sf2),inset 0 -2px 0 var(--sf)}
 .sf-table tr.sf-cut td{border-bottom:2px solid var(--fg)}
+@media (max-width:520px){.sf{padding:20px 14px 44px;gap:30px}#sel-equipo{width:100%}.sf-hide-sm{display:none}.sf-chart text{font-size:11px}.sf-lead{font-size:16px}}
 .sf-foot{font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
 .sf-foot p{max-width:74ch;margin:.4em 0}
 .sf-foot a{color:var(--fg)}
@@ -71,7 +82,7 @@ select{font:inherit;color:var(--fg);background:var(--pop);border:1px solid var(-
 <main class="sf" id="app">
 <header class="sf-head">
   <div class="sf-row">
-    <p class="sf-eyebrow">Liga BetPlay · <span data-f="torneo">—</span></p>
+    <p class="sf-eyebrow">Liga BetPlay · <span data-f="torneo">—</span> · datos al <span data-f="hasta">—</span></p>
     <select id="sel-equipo" aria-label="Equipo"></select>
   </div>
   <h1 class="sf-h1"><span class="sf-badge" id="escudo"></span><span data-f="equipo">—</span>, en datos</h1>
@@ -95,7 +106,7 @@ select{font:inherit;color:var(--fg);background:var(--pop);border:1px solid var(-
 <section class="sf-sec">
   <h2>Quién llega a la final y quién sale campeón</h2>
   <p class="sf-legend"><span><i class="sf-sw sf-sw-dark"></i>Sale campeón</span><span><i class="sf-sw"></i>Llega a la final</span></p>
-  <p class="sf-note">Porcentaje de <span id="sims">—</span> simulaciones de los cuadrangulares y la final hechas con el modelo. Los cabezas de serie (★) tienen punto invisible: ganan cualquier empate en puntos en su grupo. El equipo elegido arriba va con sus colores.</p>
+  <p class="sf-note">Porcentaje de <span id="sims">—</span> simulaciones de los cuadrangulares y la final hechas con el modelo. Los cabezas de serie (★) tienen punto invisible: ganan cualquier empate en puntos en su grupo. El equipo elegido arriba va con sus colores y su grupo va sombreado.</p>
   <div class="sf-chart" id="g-sim"></div>
 </section>
 
@@ -117,7 +128,7 @@ select{font:inherit;color:var(--fg);background:var(--pop);border:1px solid var(-
   <section class="sf-sec">
     <h2>Tabla de posiciones</h2>
     <p class="sf-note">Fase todos contra todos. Los ocho primeros, sobre la línea gruesa, pasan a cuadrangulares.</p>
-    <div class="sf-scroll"><table class="sf-table"><thead><tr><th>#</th><th class="sf-l">Equipo</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DG</th><th>Pts</th></tr></thead><tbody id="t-tabla"></tbody></table></div>
+    <div class="sf-scroll"><table class="sf-table"><thead><tr><th>#</th><th class="sf-l">Equipo</th><th>PJ</th><th class="sf-hide-sm">G</th><th class="sf-hide-sm">E</th><th class="sf-hide-sm">P</th><th class="sf-hide-sm">GF</th><th class="sf-hide-sm">GC</th><th>DG</th><th>Pts</th></tr></thead><tbody id="t-tabla"></tbody></table></div>
   </section>
   <section class="sf-sec">
     <h2>Ataque y defensa según el modelo</h2>
@@ -217,7 +228,8 @@ function drawSim() {
   const { w, svg, hover } = stage(el, H, 'Porcentaje de simulaciones en que cada equipo llega a la final y sale campeón');
   const x = d3.scaleLinear([0, d3.max(d, (r) => +r.p_final)], [m.l, w - m.r]);
   const g = svg.append('g').selectAll('g').data(d).join('g').attr('transform', (r, i) => 'translate(0,' + (m.t + i * rh) + ')');
-  g.append('rect').attr('width', w).attr('height', rh).style('fill', 'transparent');
+  const own = d.find((r) => r.equipo === team);
+  g.append('rect').attr('width', w).attr('height', rh).style('fill', (r) => (own && r.grupo === own.grupo ? 'var(--grid)' : 'transparent'));
   g.append('text').attr('class', (r) => (r.equipo === team ? 'sf-strong' : null)).attr('x', m.l - 8).attr('y', rh / 2).attr('dy', '.32em').attr('text-anchor', 'end').text((r) => (r.cabeza === 'sí' ? '★ ' : '') + r.equipo + ' · ' + r.grupo);
   g.append('rect').attr('class', (r) => (r.equipo === team ? 'sf-hi' : null)).attr('x', m.l).attr('y', 5).attr('height', 12).attr('width', (r) => x(+r.p_campeon) - m.l).style('fill', (r) => (r.equipo === team ? null : 'var(--muted)'));
   g.append('rect').attr('x', m.l).attr('y', 19).attr('height', 12).attr('width', (r) => x(+r.p_final) - m.l).style('fill', 'var(--chart-muted)');
@@ -237,7 +249,7 @@ function drawTorneos() {
   const g = svg.append('g').selectAll('g').data(d).join('g');
   g.append('rect').attr('class', (r) => (r.torneo === last ? 'sf-hi' : null)).attr('x', (r) => x(r.torneo)).attr('width', x.bandwidth()).attr('y', (r) => y(+r.ppp)).attr('height', (r) => y(0) - y(+r.ppp)).style('fill', (r) => (r.torneo === last ? null : 'var(--chart-muted)'));
   g.append('line').attr('x1', (r) => x(r.torneo) - 3).attr('x2', (r) => x(r.torneo) + x.bandwidth() + 3).attr('y1', (r) => y(+r.ppp_liga)).attr('y2', (r) => y(+r.ppp_liga)).style('stroke', 'var(--fg)').style('stroke-width', 1.5);
-  g.append('text').attr('class', 'sf-strong').attr('x', (r) => x(r.torneo) + x.bandwidth() / 2).attr('y', (r) => Math.min(y(+r.ppp), y(+r.ppp_liga)) - 5).attr('text-anchor', 'middle').text((r) => r.pos + '.º');
+  g.append('text').attr('class', 'sf-strong').attr('x', (r) => x(r.torneo) + x.bandwidth() / 2).attr('y', (r) => Math.min(y(+r.ppp), y(+r.ppp_liga)) - 5).attr('text-anchor', 'middle').text((r) => r.pos + (w < 480 ? '' : '.º'));
   g.append('text').attr('x', (r) => x(r.torneo) + x.bandwidth() / 2).attr('y', H - m.b + 14).attr('text-anchor', 'middle').text((r) => r.torneo.split(' ')[1]);
   svg.append('g').selectAll('text').data(d3.groups(d, (r) => r.torneo.split(' ')[0])).join('text').attr('x', ([, v]) => d3.mean(v, (r) => x(r.torneo) + x.bandwidth() / 2)).attr('y', H - m.b + 30).attr('text-anchor', 'middle').text(([k]) => k);
   hover(g, (r) => r.torneo + ': ' + es(r.ppp, 2) + ' puntos por partido (' + r.pts + ' en ' + r.pj + '), puesto ' + r.pos + '. Promedio de la liga: ' + es(r.ppp_liga, 2));
@@ -300,13 +312,13 @@ function fill(id, data, cols, opt) {
   const o = opt || {};
   $(id).replaceChildren(...data.map((r) => {
     const tr = document.createElement('tr'); const c = o.cls ? o.cls(r) : ''; if (c) tr.className = c;
-    cols.forEach(([f, left, fmt]) => { const td = document.createElement('td'); if (left) td.className = 'sf-l'; if (o.badge === f) td.append(badge(r[f], 13, false), r[f]); else td.textContent = fmt ? fmt(r[f]) : r[f]; tr.append(td); });
+    cols.forEach(([f, left, fmt, hide]) => { const td = document.createElement('td'); if (left) td.className = 'sf-l'; if (hide) td.classList.add('sf-hide-sm'); if (o.badge === f) td.append(badge(r[f], 13, false), r[f]); else td.textContent = fmt ? fmt(r[f]) : r[f]; tr.append(td); });
     if (o.pick) { tr.style.cursor = 'pointer'; tr.addEventListener('click', () => pick(r[o.pick])); }
     return tr;
   }));
 }
 function drawTables() {
-  fill('t-tabla', D.tabla, [['pos'], ['equipo', true], ['pj'], ['pg'], ['pe'], ['pp'], ['gf'], ['gc'], ['dg', false, (v) => (+v > 0 ? '+' + v : String(v).replace('-', '−'))], ['pts']], { badge: 'equipo', pick: 'equipo', cls: (r) => [r.equipo === team ? 'sf-me' : '', +r.pos === 8 ? 'sf-cut' : ''].join(' ').trim() });
+  fill('t-tabla', D.tabla, [['pos'], ['equipo', true], ['pj'], ['pg', false, null, true], ['pe', false, null, true], ['pp', false, null, true], ['gf', false, null, true], ['gc', false, null, true], ['dg', false, (v) => (+v > 0 ? '+' + v : String(v).replace('-', '−'))], ['pts']], { badge: 'equipo', pick: 'equipo', cls: (r) => [r.equipo === team ? 'sf-me' : '', +r.pos === 8 ? 'sf-cut' : ''].join(' ').trim() });
   fill('t-goleadores', mine('goleadores'), [['jugador', true], ['goles'], ['penales']]);
   fill('t-metricas', D.metricas, [['modelo', true], ['partidos'], ['acierto_pct', false, (v) => es(v, 1)], ['log_loss', false, (v) => es(v, 3)], ['brier', false, (v) => es(v, 3)]]);
 }
