@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liga BetPlay equipo por equipo · Fútbol Analytics Colombia</title>
+<meta name="description" content="Analítica de la Liga BetPlay 2022–2026: rendimiento por equipo, modelo de predicción y simulación del título.">
+<style>
+:root{--bg:#fbfaf6;--fg:#1b1b1b;--muted:#66645e;--line:#dcd9d0;--chart-muted:#c8c5bb;--grid:#ebe8df;--pop:#ffffff;--ok:#1a7f37;--bad:#c62828;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--serif:"Iowan Old Style","Palatino Linotype",Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#131313;--fg:#ededea;--muted:#a3a19a;--line:#343330;--chart-muted:#4c4b47;--grid:#262624;--pop:#1f1f1e;--ok:#56c271;--bad:#ef6b6b}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.45}
+.sf{--sf:#c8102e;--sf2:#ffffff;--sf-ink:#ffffff;display:grid;gap:36px;max-width:1120px;margin:0 auto;padding:28px 20px 56px}
+.sf-head{position:relative;padding-left:28px}
+.sf-head::before{content:"";position:absolute;left:0;top:0;bottom:0;width:10px;background:linear-gradient(var(--sf) 50%,var(--sf2) 50%);outline:1px solid var(--line)}
+.sf-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.sf-eyebrow{margin:0;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.sf-h1{margin:.15em 0 .25em;font-family:var(--serif);font-weight:400;font-size:clamp(2rem,6vw,3.4rem);line-height:1.02}
+.sf-badge{display:inline-block;vertical-align:middle;margin-right:.22em;line-height:0}
+.sf-lead{margin:0;max-width:62ch;font-size:18px}
+.sf-lead b{font-weight:600;font-variant-numeric:tabular-nums}
+select{font:inherit;color:var(--fg);background:var(--pop);border:1px solid var(--line);border-radius:6px;padding:6px 10px}
+.sf-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border-top:1px solid var(--fg);border-bottom:1px solid var(--line)}
+.sf-kpi{padding:14px 14px 14px 0}
+.sf-kpi h3{margin:0;font-size:12px;font-weight:600;color:var(--muted)}
+.sf-num{font-family:var(--serif);font-size:2.6rem;line-height:1.1;font-variant-numeric:tabular-nums}
+.sf-sub{margin:0;font-size:12px;color:var(--muted)}
+.sf-chips{display:flex;gap:4px;margin:.5rem 0 .35rem;min-height:1.9rem}
+.sf-chip{display:grid;place-items:center;width:1.9rem;height:1.9rem;font-size:12px;font-weight:600;border:1px solid var(--line)}
+.sf-chip-G{background:var(--sf);border-color:var(--sf);color:var(--sf-ink);box-shadow:inset 0 -3px 0 var(--sf2)}
+.sf-chip-P{color:var(--muted)}
+.sf-grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:36px}
+.sf-sec h2{margin:0 0 .2em;font-size:18px;font-weight:600}
+.sf-note{margin:0 0 12px;font-size:12px;color:var(--muted);max-width:64ch}
+.sf-chart{position:relative;min-height:240px}
+.sf-chart svg{display:block;overflow:visible}
+.sf-chart text{font-family:var(--sans);font-size:12px;fill:var(--muted);font-variant-numeric:tabular-nums}
+.sf-chart text.sf-strong{fill:var(--fg);font-weight:600}
+.sf-chart text.sf-onteam{fill:var(--sf-ink)}
+.sf-chart .sf-hi{fill:var(--sf);stroke:var(--sf2);stroke-width:2px}
+.sf-tip{position:absolute;z-index:2;pointer-events:none;max-width:230px;padding:6px 8px;font-size:12px;background:var(--pop);border:1px solid var(--line);box-shadow:0 4px 14px rgba(0,0,0,.14);border-radius:6px}
+.sf-legend{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 6px;font-size:12px;color:var(--muted)}
+.sf-sw{display:inline-block;width:.75em;height:.75em;margin-right:.35em;background:var(--chart-muted)}
+.sf-sw-team{background:var(--sf);box-shadow:0 0 0 1.5px var(--sf2)}
+.sf-sw-dark{background:var(--muted)}
+.sf-scroll{overflow-x:auto}
+.sf-table{width:100%;border-collapse:collapse;font-size:12.5px;font-variant-numeric:tabular-nums}
+.sf-table th{text-align:right;font-weight:600;color:var(--muted);padding:4px 6px;border-bottom:1px solid var(--fg)}
+.sf-table td{text-align:right;padding:5px 6px;border-bottom:1px solid var(--line)}
+.sf-table th.sf-l,.sf-table td.sf-l{text-align:left;white-space:nowrap}
+.sf-table td svg{vertical-align:-2px;margin-right:6px}
+.sf-table tr.sf-me td{font-weight:600;box-shadow:inset 0 -2px 0 var(--sf)}
+.sf-table tr.sf-me td:first-child{box-shadow:inset 4px 0 0 var(--sf),inset 8px 0 0 var(--sf2),inset 0 -2px 0 var(--sf)}
+.sf-table tr.sf-cut td{border-bottom:2px solid var(--fg)}
+.sf-foot{font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+.sf-foot p{max-width:74ch;margin:.4em 0}
+.sf-foot a{color:var(--fg)}
+.sf-error{padding:16px;border:1px solid var(--bad);color:var(--bad)}
+</style>
+</head>
+<body>
+<main class="sf" id="app">
+<header class="sf-head">
+  <div class="sf-row">
+    <p class="sf-eyebrow">Liga BetPlay · <span data-f="torneo">—</span></p>
+    <select id="sel-equipo" aria-label="Equipo"></select>
+  </div>
+  <h1 class="sf-h1"><span class="sf-badge" id="escudo"></span><span data-f="equipo">—</span>, en datos</h1>
+  <p class="sf-lead"><b data-f="equipo">—</b> terminó el todos contra todos en el puesto <b data-f="pos">—</b> con <b data-f="pts">—</b> puntos en <b data-f="pj">—</b> partidos<span id="alt-resto">, a <b id="brecha">—</b> del líder, <b data-f="lider">—</b></span><span id="alt-lider" hidden>, como líder</span>. Su último partido fue un <b data-f="ultimo_marcador">—</b> de <span data-f="ultimo_cond">—</span> contra <b data-f="ultimo_rival">—</b>.</p>
+</header>
+
+<section class="sf-kpis">
+  <div class="sf-kpi"><h3>Posición</h3><div class="sf-num"><span data-f="pos">—</span>.º</div><p class="sf-sub">de 20 equipos; clasifican 8</p></div>
+  <div class="sf-kpi"><h3>Puntos por partido</h3><div class="sf-num" data-f="ppp">—</div><p class="sf-sub"><span id="cambio">—</span> frente al torneo <span data-f="torneo_previo">—</span></p></div>
+  <div class="sf-kpi"><h3>Goles a favor y en contra</h3><div class="sf-num"><span data-f="gf">—</span>–<span data-f="gc">—</span></div><p class="sf-sub">en el todos contra todos</p></div>
+  <div class="sf-kpi"><h3>Últimos 5 partidos</h3><div class="sf-chips" id="racha"></div><p class="sf-sub"><span data-f="pts5">—</span> de 15 puntos; el más reciente a la derecha</p></div>
+</section>
+
+<section class="sf-sec">
+  <h2>Quién llega a la final y quién sale campeón</h2>
+  <p class="sf-legend"><span><i class="sf-sw sf-sw-dark"></i>Sale campeón</span><span><i class="sf-sw"></i>Llega a la final</span></p>
+  <p class="sf-note">Porcentaje de <span id="sims">—</span> simulaciones de los cuadrangulares y la final hechas con el modelo. Los cabezas de serie (★) tienen punto invisible: ganan cualquier empate en puntos en su grupo. El equipo elegido arriba va con sus colores.</p>
+  <div class="sf-chart" id="g-sim"></div>
+</section>
+
+<div class="sf-grid2">
+  <section class="sf-sec">
+    <h2>Puntos por partido en cada torneo</h2>
+    <p class="sf-note">Incluye fases finales. La raya marca el promedio de la liga y el número sobre la barra es el puesto en el todos contra todos. I es Apertura y II es Clausura.</p>
+    <div class="sf-chart" id="g-torneos"></div>
+  </section>
+  <section class="sf-sec">
+    <h2>Cuándo marca y cuándo recibe en <span data-f="anio">—</span></h2>
+    <p class="sf-legend"><span><i class="sf-sw sf-sw-team"></i>Goles a favor</span><span><i class="sf-sw"></i>Goles en contra</span></p>
+    <p class="sf-note">Goles de liga por tramos de 15 minutos; el tiempo añadido cuenta en el tramo que cierra cada tiempo.</p>
+    <div class="sf-chart" id="g-tramos"></div>
+  </section>
+</div>
+
+<div class="sf-grid2">
+  <section class="sf-sec">
+    <h2>Tabla de posiciones</h2>
+    <p class="sf-note">Fase todos contra todos. Los ocho primeros, sobre la línea gruesa, pasan a cuadrangulares.</p>
+    <div class="sf-scroll"><table class="sf-table"><thead><tr><th>#</th><th class="sf-l">Equipo</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DG</th><th>Pts</th></tr></thead><tbody id="t-tabla"></tbody></table></div>
+  </section>
+  <section class="sf-sec">
+    <h2>Ataque y defensa según el modelo</h2>
+    <p class="sf-note">Cada punto es un equipo. Más a la derecha ataca mejor y más arriba defiende mejor; el cruce de las líneas es el promedio de la liga.</p>
+    <div class="sf-chart" id="g-fuerzas"></div>
+  </section>
+</div>
+
+<div class="sf-grid2">
+  <section class="sf-sec">
+    <div class="sf-row"><h2>Qué espera el modelo contra cada rival</h2><select id="sel-cond" aria-label="Condición"><option value="local">De local</option><option value="visitante">De visitante</option></select></div>
+    <p class="sf-legend"><span><i class="sf-sw sf-sw-team"></i>Gana</span><span><i class="sf-sw"></i>Empata</span><span><i class="sf-sw sf-sw-dark"></i>Pierde</span></p>
+    <p class="sf-note">Probabilidades en porcentaje para un partido jugado hoy. Son estimaciones de un modelo sencillo, no certezas.</p>
+    <div class="sf-chart" id="g-pred"></div>
+  </section>
+  <section class="sf-sec">
+    <h2>Goleadores del equipo desde 2022</h2>
+    <p class="sf-note">Goles de liga, sin contar autogoles.</p>
+    <div class="sf-scroll"><table class="sf-table"><thead><tr><th class="sf-l">Jugador</th><th>Goles</th><th>De penal</th></tr></thead><tbody id="t-goleadores"></tbody></table></div>
+    <h2 style="margin-top:36px">Qué tan bueno es el modelo</h2>
+    <p class="sf-note">Evaluado sobre partidos posteriores a julio de 2025 que no vio al entrenar. Más acierto es mejor; menos log loss y Brier es mejor.</p>
+    <div class="sf-scroll"><table class="sf-table"><thead><tr><th class="sf-l">Modelo</th><th>Partidos</th><th>Acierto %</th><th>Log loss</th><th>Brier</th></tr></thead><tbody id="t-metricas"></tbody></table></div>
+  </section>
+</div>
+
+<footer class="sf-foot">
+  <p>Datos: <span data-f="partidos_total">—</span> partidos de la Liga BetPlay tomados de la API pública de ESPN, con corte al <span data-f="hasta">—</span>; se actualizan solos cada día. ESPN usa el nombre actual de cada club, así que La Equidad aparece como Inter Bogotá en toda la serie.</p>
+  <p>Modelo: regresión de Poisson con una fuerza de ataque y una de defensa por equipo, ventaja de local y más peso para los partidos recientes. No conoce lesiones, sanciones ni nóminas. La simulación sortea los goles de cada partido pendiente; un empate global en la final se define por penales con 50 % para cada uno.</p>
+  <p>Los escudos son ilustraciones propias con los colores de cada club, no los oficiales. Código en <a href="https://github.com/diazzz9/futbol-analytics-colombia">GitHub</a> · <a href="https://futbol-analytics-colombia.onrender.com/docs">API</a> · Daniel Julián Díaz Riaño</p>
+</footer>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script>
+const FILES = { resumen: 'resumen.csv', tabla: 'tabla_actual.csv', torneos: 'torneos_equipo.csv', tramos: 'goles_tramos.csv', goleadores: 'goleadores_equipo.csv', fuerzas: 'fuerzas.csv', predicciones: 'predicciones_equipo.csv', metricas: 'modelo_metricas.csv', simulacion: 'simulacion.csv' };
+const COLORS = { 'Nacional': ['#00843d', '#ffffff'], 'América': ['#d50032', '#ffffff'], 'Cali': ['#00693e', '#ffffff'], 'Bucaramanga': ['#f2c300', '#00843d'], 'Santa Fe': ['#c8102e', '#ffffff'], 'Medellín': ['#0033a0', '#d6001c'], 'Millonarios': ['#0033a0', '#ffffff'], 'Once Caldas': ['#3a3a3a', '#ffffff'], 'Tolima': ['#7b1e3a', '#f2c300'], 'Cúcuta': ['#d6001c', '#111111'], 'Águilas Doradas': ['#d4a017', '#111111'], 'Llaneros': ['#3a3a3a', '#c9a13b'], 'Junior': ['#d6001c', '#ffffff'], 'Inter Bogotá': ['#c9a13b', '#111111'], 'Chicó': ['#1f4fa3', '#ffffff'], 'Alianza': ['#0057b8', '#d6001c'], 'Pereira': ['#f2c300', '#d6001c'], 'Pasto': ['#d6001c', '#0033a0'], 'Jaguares': ['#6cace4', '#ffffff'], 'Fortaleza': ['#1b2a5c', '#d6001c'] };
+const SHIELD = 'M4 3h32v22c0 10-8 16-16 19C12 41 4 35 4 25z';
+const D = {};
+let team = new URLSearchParams(location.search).get('equipo') || 'Santa Fe';
+
+const $ = (id) => document.getElementById(id);
+const es = (v, d) => (+v).toFixed(d).replace('.', ',');
+const show = (v) => { const t = String(v ?? ''); if (/^-?\d+\.\d+$/.test(t)) return t.replace('.', ','); if (/^\d{4,}$/.test(t)) return d3.format(',')(+t).replace(/,/g, '.'); if (/^\d{4}-\d{2}-\d{2}$/.test(t)) return d3.utcFormat('%d/%m/%Y')(new Date(t)); return t || '—'; };
+const mine = (id) => D[id].filter((r) => r.equipo === team);
+const ink = (hex) => { const n = parseInt(hex.slice(1), 16); return 0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255) > 150 ? '#111111' : '#ffffff'; };
+const initials = (n) => { const w = String(n).split(' '); return (w.length > 1 ? w.map((x) => x[0]).join('') : String(n).slice(0, 3)).toUpperCase(); };
+
+function badge(name, size, letters) {
+  const c = COLORS[name] || ['#888888', '#ffffff'];
+  const s = d3.create('svg').attr('viewBox', '0 0 40 46').attr('width', size).attr('height', Math.round(size * 1.15)).attr('aria-hidden', 'true');
+  s.append('path').attr('d', SHIELD).style('fill', c[0]);
+  s.append('path').attr('d', 'M4 27h32c-1 9-8.5 14.5-16 17C12.5 41.5 5 36 4 27z').style('fill', c[1]);
+  s.append('path').attr('d', SHIELD).style('fill', 'none').style('stroke', 'var(--fg)').style('stroke-width', letters ? 1.5 : 3);
+  if (letters) s.append('text').attr('x', 20).attr('y', 19.5).attr('text-anchor', 'middle').style('font', '700 11px system-ui,sans-serif').style('fill', ink(c[0])).text(initials(name));
+  return s.node();
+}
+
+function stage(el, h, label) {
+  const w = Math.max(el.clientWidth, 260);
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', '0 0 ' + w + ' ' + h).attr('role', 'img').attr('aria-label', label);
+  const tip = document.createElement('div'); tip.className = 'sf-tip'; tip.hidden = true;
+  el.replaceChildren(svg.node(), tip);
+  const move = (ev, text) => { tip.textContent = text; tip.hidden = false; const b = el.getBoundingClientRect(); tip.style.left = Math.max(0, Math.min(ev.clientX - b.left + 12, b.width - tip.offsetWidth - 2)) + 'px'; tip.style.top = (ev.clientY - b.top + 14) + 'px'; };
+  const hover = (sel, text) => sel.on('pointerenter pointermove pointerdown', (ev, d) => move(ev, text(d))).on('pointerleave', () => { tip.hidden = true; });
+  return { w, svg, hover };
+}
+function grid(svg, y, x0, x1, fmt) {
+  const t = y.ticks(4);
+  svg.append('g').selectAll('line').data(t).join('line').attr('x1', x0).attr('x2', x1).attr('y1', y).attr('y2', y).style('stroke', 'var(--grid)');
+  svg.append('g').selectAll('text').data(t).join('text').attr('x', x0 - 6).attr('y', y).attr('dy', '.32em').attr('text-anchor', 'end').text(fmt);
+}
+
+function drawHeader() {
+  const c = COLORS[team] || ['#c8102e', '#ffffff'];
+  const root = $('app'); root.style.setProperty('--sf', c[0]); root.style.setProperty('--sf2', c[1]); root.style.setProperty('--sf-ink', ink(c[0]));
+  const r = mine('resumen')[0]; if (!r) return;
+  r.anio = String(r.torneo).split(' ').pop();
+  document.querySelectorAll('[data-f]').forEach((el) => { el.textContent = el.dataset.f === 'anio' ? r.anio : show(r[el.dataset.f]); });
+  $('escudo').replaceChildren(badge(team, 46, true));
+  const lead = +r.brecha === 0; $('alt-lider').hidden = !lead; $('alt-resto').hidden = lead;
+  $('brecha').textContent = r.brecha + (+r.brecha === 1 ? ' punto' : ' puntos');
+  const ce = $('cambio');
+  if (r.ppp_cambio === '' || r.ppp_cambio == null) { ce.textContent = '—'; ce.style.color = ''; }
+  else { const v = +r.ppp_cambio; ce.textContent = (v > 0 ? '+' : v < 0 ? '−' : '') + es(Math.abs(v), 2); ce.style.color = v > 0 ? 'var(--ok)' : v < 0 ? 'var(--bad)' : ''; }
+  const names = { G: 'Ganado', E: 'Empatado', P: 'Perdido' };
+  $('racha').replaceChildren(...String(r.racha5).split('').map((k) => { const s = document.createElement('span'); s.className = 'sf-chip sf-chip-' + k; s.textContent = k; s.setAttribute('aria-label', names[k] || k); return s; }));
+  $('sims').textContent = D.simulacion[0] ? show(D.simulacion[0].simulaciones) : '—';
+  document.title = team + ' en datos · Liga BetPlay';
+}
+
+function drawSim() {
+  const d = D.simulacion, el = $('g-sim'); if (!d.length) { el.textContent = 'Sin cuadrangulares en curso.'; return; }
+  const rh = 36, m = { t: 2, r: 52, b: 2, l: 118 }, H = m.t + m.b + rh * d.length;
+  const { w, svg, hover } = stage(el, H, 'Porcentaje de simulaciones en que cada equipo llega a la final y sale campeón');
+  const x = d3.scaleLinear([0, d3.max(d, (r) => +r.p_final)], [m.l, w - m.r]);
+  const g = svg.append('g').selectAll('g').data(d).join('g').attr('transform', (r, i) => 'translate(0,' + (m.t + i * rh) + ')');
+  g.append('rect').attr('width', w).attr('height', rh).style('fill', 'transparent');
+  g.append('text').attr('class', (r) => (r.equipo === team ? 'sf-strong' : null)).attr('x', m.l - 8).attr('y', rh / 2).attr('dy', '.32em').attr('text-anchor', 'end').text((r) => (r.cabeza === 'sí' ? '★ ' : '') + r.equipo + ' · ' + r.grupo);
+  g.append('rect').attr('class', (r) => (r.equipo === team ? 'sf-hi' : null)).attr('x', m.l).attr('y', 5).attr('height', 12).attr('width', (r) => x(+r.p_campeon) - m.l).style('fill', (r) => (r.equipo === team ? null : 'var(--muted)'));
+  g.append('rect').attr('x', m.l).attr('y', 19).attr('height', 12).attr('width', (r) => x(+r.p_final) - m.l).style('fill', 'var(--chart-muted)');
+  g.append('text').attr('class', 'sf-strong').attr('x', (r) => x(+r.p_campeon) + 6).attr('y', 11).attr('dy', '.32em').text((r) => es(r.p_campeon, 1) + ' %');
+  g.append('text').attr('x', (r) => x(+r.p_final) + 6).attr('y', 25).attr('dy', '.32em').text((r) => es(r.p_final, 1) + ' %');
+  hover(g, (r) => r.equipo + ' (grupo ' + r.grupo + (r.cabeza === 'sí' ? ', cabeza de serie' : '') + '): llega a la final en ' + es(r.p_final, 1) + ' % de las simulaciones y sale campeón en ' + es(r.p_campeon, 1) + ' %. Puntos esperados en el grupo: ' + es(r.pts_esperados, 1));
+}
+
+function drawTorneos() {
+  const d = mine('torneos'), el = $('g-torneos'); if (!d.length) { el.textContent = '—'; return; }
+  const H = 260, m = { t: 22, r: 4, b: 38, l: 30 };
+  const { w, svg, hover } = stage(el, H, 'Puntos por partido de ' + team + ' en cada torneo desde 2022, comparados con el promedio de la liga');
+  const x = d3.scaleBand(d.map((r) => r.torneo), [m.l, w - m.r]).padding(0.28);
+  const y = d3.scaleLinear([0, Math.max(d3.max(d, (r) => +r.ppp), 1.5) * 1.12], [H - m.b, m.t]);
+  grid(svg, y, m.l, w - m.r, (v) => es(v, 1));
+  const last = d[d.length - 1].torneo;
+  const g = svg.append('g').selectAll('g').data(d).join('g');
+  g.append('rect').attr('class', (r) => (r.torneo === last ? 'sf-hi' : null)).attr('x', (r) => x(r.torneo)).attr('width', x.bandwidth()).attr('y', (r) => y(+r.ppp)).attr('height', (r) => y(0) - y(+r.ppp)).style('fill', (r) => (r.torneo === last ? null : 'var(--chart-muted)'));
+  g.append('line').attr('x1', (r) => x(r.torneo) - 3).attr('x2', (r) => x(r.torneo) + x.bandwidth() + 3).attr('y1', (r) => y(+r.ppp_liga)).attr('y2', (r) => y(+r.ppp_liga)).style('stroke', 'var(--fg)').style('stroke-width', 1.5);
+  g.append('text').attr('class', 'sf-strong').attr('x', (r) => x(r.torneo) + x.bandwidth() / 2).attr('y', (r) => Math.min(y(+r.ppp), y(+r.ppp_liga)) - 5).attr('text-anchor', 'middle').text((r) => r.pos + '.º');
+  g.append('text').attr('x', (r) => x(r.torneo) + x.bandwidth() / 2).attr('y', H - m.b + 14).attr('text-anchor', 'middle').text((r) => r.torneo.split(' ')[1]);
+  svg.append('g').selectAll('text').data(d3.groups(d, (r) => r.torneo.split(' ')[0])).join('text').attr('x', ([, v]) => d3.mean(v, (r) => x(r.torneo) + x.bandwidth() / 2)).attr('y', H - m.b + 30).attr('text-anchor', 'middle').text(([k]) => k);
+  hover(g, (r) => r.torneo + ': ' + es(r.ppp, 2) + ' puntos por partido (' + r.pts + ' en ' + r.pj + '), puesto ' + r.pos + '. Promedio de la liga: ' + es(r.ppp_liga, 2));
+}
+
+function drawTramos() {
+  const d = mine('tramos'), el = $('g-tramos'); if (!d.length) { el.textContent = '—'; return; }
+  const H = 240, m = { t: 20, r: 4, b: 24, l: 26 };
+  const { w, svg, hover } = stage(el, H, 'Goles a favor y en contra de ' + team + ' por tramos de 15 minutos');
+  const x = d3.scaleBand(d.map((r) => r.tramo), [m.l, w - m.r]).padding(0.24);
+  const keys = ['a_favor', 'en_contra'];
+  const x1 = d3.scaleBand(keys, [0, x.bandwidth()]).padding(0.08);
+  const y = d3.scaleLinear([0, Math.max(d3.max(d, (r) => Math.max(+r.a_favor, +r.en_contra)), 4) * 1.12], [H - m.b, m.t]);
+  grid(svg, y, m.l, w - m.r, (v) => v);
+  const g = svg.append('g').selectAll('g').data(d).join('g').attr('transform', (r) => 'translate(' + x(r.tramo) + ',0)');
+  keys.forEach((k) => {
+    g.append('rect').attr('class', k === 'a_favor' ? 'sf-hi' : null).attr('x', x1(k)).attr('width', x1.bandwidth()).attr('y', (r) => y(+r[k])).attr('height', (r) => y(0) - y(+r[k])).style('fill', k === 'a_favor' ? null : 'var(--chart-muted)');
+    g.append('text').attr('class', k === 'a_favor' ? 'sf-strong' : null).attr('x', x1(k) + x1.bandwidth() / 2).attr('y', (r) => y(+r[k]) - 5).attr('text-anchor', 'middle').text((r) => r[k]);
+  });
+  g.append('text').attr('x', x.bandwidth() / 2).attr('y', H - m.b + 15).attr('text-anchor', 'middle').text((r) => r.tramo);
+  hover(g, (r) => 'Minutos ' + r.tramo + ': ' + r.a_favor + ' a favor, ' + r.en_contra + ' en contra');
+}
+
+function drawFuerzas() {
+  const d = D.fuerzas, el = $('g-fuerzas');
+  const H = 340, m = { t: 14, r: 14, b: 30, l: 14 };
+  const { w, svg, hover } = stage(el, H, 'Fuerza de ataque y de defensa de los 20 equipos según el modelo, con ' + team + ' resaltado');
+  const pad = (e) => { const s = (e[1] - e[0]) * 0.12; return [e[0] - s, e[1] + s]; };
+  const x = d3.scaleLinear(pad(d3.extent(d, (r) => +r.ataque)), [m.l, w - m.r]);
+  const y = d3.scaleLinear(pad(d3.extent(d, (r) => +r.defensa)), [H - m.b, m.t]);
+  svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', H - m.b).style('stroke', 'var(--line)');
+  svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(0)).attr('y2', y(0)).style('stroke', 'var(--line)');
+  svg.append('text').attr('x', w - m.r).attr('y', H - 8).attr('text-anchor', 'end').text('Mejor ataque →');
+  svg.append('text').attr('x', m.l).attr('y', m.t).text('↑ Mejor defensa');
+  const rank = d.slice().sort((a, b) => (+b.ataque + +b.defensa) - (+a.ataque + +a.defensa)).map((r) => r.equipo);
+  const named = new Set(); const placed = [[m.l + 50, m.t], [w - m.r - 50, H - 8]];
+  [team, ...rank.slice(0, 4), ...rank.slice(-2)].forEach((n) => { const r = d.find((q) => q.equipo === n); if (!r || named.has(n)) return; const px = x(+r.ataque), py = y(+r.defensa) - 10; if (placed.some((p) => Math.abs(p[0] - px) < 96 && Math.abs(p[1] - py) < 18)) return; placed.push([px, py]); named.add(n); });
+  const g = svg.append('g').selectAll('g').data(d.slice().sort((a, b) => (a.equipo === team) - (b.equipo === team))).join('g').attr('transform', (r) => 'translate(' + x(+r.ataque) + ',' + y(+r.defensa) + ')');
+  g.append('circle').attr('r', 14).style('fill', 'transparent');
+  g.append('circle').attr('class', (r) => (r.equipo === team ? 'sf-hi' : null)).attr('r', (r) => (r.equipo === team ? 7 : 5)).style('fill', (r) => (r.equipo === team ? null : 'var(--chart-muted)'));
+  g.filter((r) => named.has(r.equipo)).append('text').attr('class', (r) => (r.equipo === team ? 'sf-strong' : null)).attr('y', -11).attr('text-anchor', (r) => (x(+r.ataque) > w - 70 ? 'end' : x(+r.ataque) < 70 ? 'start' : 'middle')).text((r) => r.equipo);
+  hover(g, (r) => r.equipo + ': ataque ' + es(r.ataque, 2) + ', defensa ' + es(r.defensa, 2));
+}
+
+function drawPred() {
+  const cond = $('sel-cond').value, el = $('g-pred');
+  const d = mine('predicciones').filter((r) => r.cond === cond).sort((a, b) => +b.gana - +a.gana); if (!d.length) { el.textContent = '—'; return; }
+  const rh = 23, m = { t: 4, r: 4, b: 4, l: 104 }, H = m.t + m.b + rh * d.length;
+  const { w, svg, hover } = stage(el, H, 'Probabilidad de que ' + team + ' gane, empate o pierda contra cada rival, de ' + cond);
+  const x = d3.scaleLinear([0, 100], [m.l, w - m.r]);
+  const parts = [['gana', null], ['empata', 'var(--chart-muted)'], ['pierde', 'var(--muted)']];
+  const g = svg.append('g').selectAll('g').data(d).join('g').attr('transform', (r, i) => 'translate(0,' + (m.t + i * rh) + ')');
+  g.append('text').attr('x', m.l - 8).attr('y', rh / 2).attr('dy', '.32em').attr('text-anchor', 'end').text((r) => r.rival);
+  g.each(function (r) { let acc = 0; const row = d3.select(this); parts.forEach(([k, color]) => { const v = +r[k]; row.append('rect').attr('class', color ? null : 'sf-hi').attr('x', x(acc) + 1).attr('y', 3).attr('width', Math.max(0, x(acc + v) - x(acc) - 2)).attr('height', rh - 6).style('fill', color); acc += v; }); });
+  g.append('text').attr('class', 'sf-onteam').attr('x', m.l + 7).attr('y', rh / 2).attr('dy', '.32em').text((r) => es(r.gana, 0) + ' %');
+  hover(g, (r) => team + ' de ' + cond + ' contra ' + r.rival + ': gana ' + es(r.gana, 1) + ' %, empata ' + es(r.empata, 1) + ' %, pierde ' + es(r.pierde, 1) + ' %. Marcador más probable: ' + r.marcador_probable);
+}
+
+function fill(id, data, cols, opt) {
+  const o = opt || {};
+  $(id).replaceChildren(...data.map((r) => {
+    const tr = document.createElement('tr'); const c = o.cls ? o.cls(r) : ''; if (c) tr.className = c;
+    cols.forEach(([f, left, fmt]) => { const td = document.createElement('td'); if (left) td.className = 'sf-l'; if (o.badge === f) td.append(badge(r[f], 13, false), r[f]); else td.textContent = fmt ? fmt(r[f]) : r[f]; tr.append(td); });
+    if (o.pick) { tr.style.cursor = 'pointer'; tr.addEventListener('click', () => pick(r[o.pick])); }
+    return tr;
+  }));
+}
+function drawTables() {
+  fill('t-tabla', D.tabla, [['pos'], ['equipo', true], ['pj'], ['pg'], ['pe'], ['pp'], ['gf'], ['gc'], ['dg', false, (v) => (+v > 0 ? '+' + v : String(v).replace('-', '−'))], ['pts']], { badge: 'equipo', pick: 'equipo', cls: (r) => [r.equipo === team ? 'sf-me' : '', +r.pos === 8 ? 'sf-cut' : ''].join(' ').trim() });
+  fill('t-goleadores', mine('goleadores'), [['jugador', true], ['goles'], ['penales']]);
+  fill('t-metricas', D.metricas, [['modelo', true], ['partidos'], ['acierto_pct', false, (v) => es(v, 1)], ['log_loss', false, (v) => es(v, 3)], ['brier', false, (v) => es(v, 3)]]);
+}
+
+function render() { drawHeader(); drawSim(); drawTorneos(); drawTramos(); drawFuerzas(); drawPred(); drawTables(); }
+function pick(name) { team = name; $('sel-equipo').value = name; history.replaceState(null, '', '?equipo=' + encodeURIComponent(name)); render(); }
+
+Promise.all(Object.entries(FILES).map(([k, f]) => d3.csv('data/' + f).then((rows) => { D[k] = rows; }))).then(() => {
+  if (!D.tabla.some((r) => r.equipo === team)) team = D.tabla[0].equipo;
+  const sel = $('sel-equipo');
+  sel.replaceChildren(...D.tabla.map((r) => new Option(r.equipo, r.equipo))); sel.value = team;
+  sel.addEventListener('change', () => pick(sel.value));
+  $('sel-cond').addEventListener('change', drawPred);
+  let timer; window.addEventListener('resize', () => { clearTimeout(timer); timer = setTimeout(render, 150); });
+  render();
+}).catch((err) => { const p = document.createElement('p'); p.className = 'sf-error'; p.textContent = 'No se pudieron cargar los datos: ' + err.message; $('app').prepend(p); });
+</script>
+</body>
+</html>

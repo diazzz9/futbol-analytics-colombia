@@ -5,7 +5,7 @@ ingesta → limpieza → PostgreSQL → API → modelo de predicción → simula
 
 **API en vivo:** https://futbol-analytics-colombia.onrender.com/docs (el plan gratuito tarda cerca de un minuto en despertar)
 
-**Dashboard:** https://claude.ai/artifact/6uU9ckysdcN94UKCSGq687
+**Dashboard:** https://diazzz9.github.io/futbol-analytics-colombia/dashboard/ (elige cualquiera de los 20 equipos)
 
 ![Probabilidad de llegar a la final y de ser campeón](docs/simulacion.png)
 
@@ -19,7 +19,7 @@ ingesta → limpieza → PostgreSQL → API → modelo de predicción → simula
 | API | `api/main.py` | FastAPI de solo lectura: posiciones, partidos, goleadores, predicciones y simulación |
 | Modelo | `src/model.py` | Regresión de Poisson con ataque/defensa por equipo, ventaja de local y decaimiento temporal |
 | Simulación | `src/simulate.py` | Monte Carlo de los cuadrangulares y la final con las reglas reales del torneo |
-| Dashboard | `src/build_dashboard_data.py` | Agregados por equipo que alimentan el dashboard |
+| Dashboard | `dashboard/index.html`, `src/build_dashboard_data.py` | Página en D3 publicada con GitHub Pages y los agregados por equipo que la alimentan |
 | Automatización | `.github/workflows/actualizar.yml` | Actualiza datos, modelo y simulación todos los días y corre las pruebas |
 
 ## Datos
@@ -115,6 +115,5 @@ Con `DATABASE_URL=sqlite:///futbol.db` todo corre sin Docker.
 ## Próximos pasos
 
 - Goles esperados (xG) a partir de tiros y tiros al arco.
-- Conectar el dashboard a la API desplegada para que se actualice solo.
 
 Autor: Daniel Julián Díaz Riaño · [GitHub](https://github.com/diazzz9) · [LinkedIn](https://linkedin.com/in/daniel-diaz-a93143344)
