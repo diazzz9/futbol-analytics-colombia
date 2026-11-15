@@ -33,3 +33,11 @@ def test_predict_probabilities_sum_to_one():
 def test_scorers():
     top = client.get("/scorers", params={"season": 2025, "limit": 3}).json()
     assert len(top) == 3 and top[0]["goals"] >= top[1]["goals"]
+
+
+def test_simulation_is_a_probability_distribution():
+    sim = client.get("/simulation").json()
+    assert len(sim) == 8
+    assert abs(sum(float(r["p_campeon"]) for r in sim) - 1) < 0.01
+    for grupo in ("A", "B"):
+        assert abs(sum(float(r["p_final"]) for r in sim if r["grupo"] == grupo) - 1) < 0.01

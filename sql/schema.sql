@@ -1,6 +1,7 @@
 -- Esquema de futbol-analytics-colombia (PostgreSQL 14+)
 DROP VIEW IF EXISTS v_standings;
 DROP VIEW IF EXISTS v_team_matches;
+DROP TABLE IF EXISTS simulation;
 DROP TABLE IF EXISTS predictions;
 DROP TABLE IF EXISTS events;
 DROP TABLE IF EXISTS matches;
@@ -67,6 +68,18 @@ CREATE TABLE predictions (
     exp_home_goals NUMERIC(4, 2) NOT NULL,
     exp_away_goals NUMERIC(4, 2) NOT NULL,
     PRIMARY KEY (home_id, away_id)
+);
+
+CREATE TABLE simulation (
+    team_id          INTEGER PRIMARY KEY REFERENCES teams (team_id),
+    grupo            CHAR(1) NOT NULL,
+    cabeza_de_serie  BOOLEAN NOT NULL,
+    puesto_fase1     INTEGER NOT NULL,
+    pts_esperados    NUMERIC(4, 2) NOT NULL,
+    p_final          NUMERIC(5, 4) NOT NULL,
+    p_campeon        NUMERIC(5, 4) NOT NULL,
+    partidos_jugados INTEGER NOT NULL,
+    simulaciones     INTEGER NOT NULL
 );
 
 CREATE INDEX idx_matches_season ON matches (season, tournament, phase);

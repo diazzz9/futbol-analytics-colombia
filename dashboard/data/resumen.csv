@@ -1,2 +1,21 @@
-torneo,pos,pts,pj,gf,gc,dg,ppp,ppp_previo,ppp_cambio,torneo_previo,lider,pts_lider,racha5,pts5,ultimo_rival,ultimo_marcador,ultimo_cond,ultimo_fecha,partidos_total,desde,hasta
-Clausura 2026,5,34,19,30,18,12,1.79,1.52,0.27,2026 I,Nacional,40,GPPGG,9,Inter Bogotá,2-0,visitante,2026-11-13,2182,2022-01-20,2026-11-14
+equipo,torneo,pos,pts,pj,gf,gc,dg,ppp,ppp_cambio,torneo_previo,lider,brecha,racha5,pts5,ultimo_rival,ultimo_marcador,ultimo_cond,ultimo_fecha,partidos_total,hasta
+Nacional,Clausura 2026,1,40,19,38,18,20,2.11,-0.09,2026 I,Nacional,0,GGEGE,11,Once Caldas,1-1,local,2026-11-14,2182,2026-11-14
+América,Clausura 2026,2,39,19,33,12,21,2.05,0.43,2026 I,Nacional,1,GGEEG,11,Pereira,2-0,visitante,2026-11-14,2182,2026-11-14
+Cali,Clausura 2026,3,35,19,28,12,16,1.84,0.42,2026 I,Nacional,5,GEGEE,9,Tolima,2-2,local,2026-11-14,2182,2026-11-14
+Bucaramanga,Clausura 2026,4,35,19,31,17,14,1.84,0.63,2026 I,Nacional,5,PGEGG,10,Fortaleza,1-0,local,2026-11-14,2182,2026-11-14
+Santa Fe,Clausura 2026,5,34,19,30,18,12,1.79,0.27,2026 I,Nacional,6,GPPGG,9,Inter Bogotá,2-0,visitante,2026-11-13,2182,2026-11-14
+Medellín,Clausura 2026,6,32,19,29,25,4,1.68,0.31,2026 I,Nacional,8,PPGGG,9,Águilas Doradas,1-0,visitante,2026-11-14,2182,2026-11-14
+Millonarios,Clausura 2026,7,30,19,27,16,11,1.58,0.21,2026 I,Nacional,10,GEEPG,8,Alianza,2-0,local,2026-11-14,2182,2026-11-14
+Once Caldas,Clausura 2026,8,28,19,23,19,4,1.47,-0.15,2026 I,Nacional,12,EEGGE,9,Nacional,1-1,visitante,2026-11-14,2182,2026-11-14
+Tolima,Clausura 2026,9,27,19,25,23,2,1.42,-0.19,2026 I,Nacional,13,PPGGE,7,Cali,2-2,visitante,2026-11-14,2182,2026-11-14
+Cúcuta,Clausura 2026,10,27,19,21,26,-5,1.42,0.58,2026 I,Nacional,13,PPGPG,6,Jaguares,2-0,local,2026-11-14,2182,2026-11-14
+Águilas Doradas,Clausura 2026,11,25,19,22,22,0,1.32,-0.05,2026 I,Nacional,15,PGGPP,6,Medellín,0-1,local,2026-11-14,2182,2026-11-14
+Llaneros,Clausura 2026,12,24,19,21,24,-3,1.26,0.1,2026 I,Nacional,16,PPGGE,7,Chicó,0-0,local,2026-11-12,2182,2026-11-14
+Junior,Clausura 2026,13,22,19,26,27,-1,1.16,-0.6,2026 I,Nacional,18,GEPGG,10,Pasto,1-0,visitante,2026-11-12,2182,2026-11-14
+Inter Bogotá,Clausura 2026,14,20,19,22,27,-5,1.05,-0.28,2026 I,Nacional,20,GPGPP,6,Santa Fe,0-2,local,2026-11-13,2182,2026-11-14
+Chicó,Clausura 2026,15,20,19,15,29,-14,1.05,0.16,2026 I,Nacional,20,GEPGE,8,Llaneros,0-0,visitante,2026-11-12,2182,2026-11-14
+Alianza,Clausura 2026,16,18,19,18,33,-15,0.95,0.06,2026 I,Nacional,22,GPPPP,3,Millonarios,0-2,visitante,2026-11-14,2182,2026-11-14
+Pereira,Clausura 2026,17,17,19,16,28,-12,0.89,0.36,2026 I,Nacional,23,EGPPP,4,América,0-2,local,2026-11-14,2182,2026-11-14
+Pasto,Clausura 2026,18,15,19,13,30,-17,0.79,-0.83,2026 I,Nacional,25,GPGPP,6,Junior,0-1,local,2026-11-12,2182,2026-11-14
+Jaguares,Clausura 2026,19,13,19,17,37,-20,0.68,-0.27,2026 I,Nacional,27,GPPPP,3,Cúcuta,0-2,visitante,2026-11-14,2182,2026-11-14
+Fortaleza,Clausura 2026,20,12,19,17,29,-12,0.63,-0.53,2026 I,Nacional,28,EPPPP,1,Bucaramanga,0-1,visitante,2026-11-14,2182,2026-11-14

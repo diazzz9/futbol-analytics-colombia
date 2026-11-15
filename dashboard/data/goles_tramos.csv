@@ -1,7 +1,121 @@
-tramo,a_favor,en_contra
-1-15,7,2
-16-30,8,6
-31-45,11,4
-46-60,9,10
-61-75,14,9
-76-90,20,16
+equipo,tramo,a_favor,en_contra
+Nacional,1-15,11,9
+Nacional,16-30,10,7
+Nacional,31-45,13,8
+Nacional,46-60,14,6
+Nacional,61-75,16,3
+Nacional,76-90,23,6
+América,1-15,6,8
+América,16-30,14,3
+América,31-45,8,6
+América,46-60,10,3
+América,61-75,13,2
+América,76-90,8,10
+Cali,1-15,7,1
+Cali,16-30,4,1
+Cali,31-45,9,6
+Cali,46-60,8,6
+Cali,61-75,10,10
+Cali,76-90,10,4
+Bucaramanga,1-15,9,3
+Bucaramanga,16-30,7,7
+Bucaramanga,31-45,14,8
+Bucaramanga,46-60,6,5
+Bucaramanga,61-75,7,5
+Bucaramanga,76-90,14,9
+Santa Fe,1-15,7,2
+Santa Fe,16-30,8,6
+Santa Fe,31-45,11,4
+Santa Fe,46-60,9,10
+Santa Fe,61-75,14,9
+Santa Fe,76-90,20,16
+Medellín,1-15,4,5
+Medellín,16-30,12,10
+Medellín,31-45,7,14
+Medellín,46-60,11,4
+Medellín,61-75,7,6
+Medellín,76-90,14,10
+Millonarios,1-15,5,2
+Millonarios,16-30,7,4
+Millonarios,31-45,12,10
+Millonarios,46-60,13,8
+Millonarios,61-75,10,7
+Millonarios,76-90,11,8
+Once Caldas,1-15,11,6
+Once Caldas,16-30,2,7
+Once Caldas,31-45,10,7
+Once Caldas,46-60,6,7
+Once Caldas,61-75,10,7
+Once Caldas,76-90,17,10
+Tolima,1-15,8,6
+Tolima,16-30,11,7
+Tolima,31-45,9,7
+Tolima,46-60,11,9
+Tolima,61-75,8,6
+Tolima,76-90,9,9
+Cúcuta,1-15,6,11
+Cúcuta,16-30,8,5
+Cúcuta,31-45,12,10
+Cúcuta,46-60,2,15
+Cúcuta,61-75,9,4
+Cúcuta,76-90,6,16
+Águilas Doradas,1-15,3,3
+Águilas Doradas,16-30,5,5
+Águilas Doradas,31-45,6,11
+Águilas Doradas,46-60,8,9
+Águilas Doradas,61-75,5,8
+Águilas Doradas,76-90,15,11
+Llaneros,1-15,3,7
+Llaneros,16-30,7,9
+Llaneros,31-45,10,6
+Llaneros,46-60,7,8
+Llaneros,61-75,6,7
+Llaneros,76-90,5,7
+Junior,1-15,8,8
+Junior,16-30,8,8
+Junior,31-45,15,10
+Junior,46-60,9,7
+Junior,61-75,9,9
+Junior,76-90,20,17
+Inter Bogotá,1-15,6,9
+Inter Bogotá,16-30,10,4
+Inter Bogotá,31-45,8,14
+Inter Bogotá,46-60,10,8
+Inter Bogotá,61-75,8,16
+Inter Bogotá,76-90,8,11
+Chicó,1-15,5,6
+Chicó,16-30,2,9
+Chicó,31-45,8,12
+Chicó,46-60,6,7
+Chicó,61-75,5,4
+Chicó,76-90,4,23
+Alianza,1-15,6,4
+Alianza,16-30,3,9
+Alianza,31-45,9,17
+Alianza,46-60,4,7
+Alianza,61-75,5,10
+Alianza,76-90,4,13
+Pereira,1-15,4,8
+Pereira,16-30,2,9
+Pereira,31-45,7,10
+Pereira,46-60,4,11
+Pereira,61-75,7,9
+Pereira,76-90,7,13
+Pasto,1-15,5,6
+Pasto,16-30,9,9
+Pasto,31-45,7,11
+Pasto,46-60,5,8
+Pasto,61-75,2,16
+Pasto,76-90,14,8
+Jaguares,1-15,4,12
+Jaguares,16-30,5,7
+Jaguares,31-45,6,10
+Jaguares,46-60,5,8
+Jaguares,61-75,5,16
+Jaguares,76-90,12,17
+Fortaleza,1-15,5,7
+Fortaleza,16-30,4,12
+Fortaleza,31-45,5,5
+Fortaleza,46-60,7,9
+Fortaleza,61-75,4,6
+Fortaleza,76-90,14,17

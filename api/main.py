@@ -93,3 +93,19 @@ def predict(home_id: int, away_id: int, conn=Depends(db)):
     if not found:
         raise HTTPException(404, "Solo hay predicciones entre equipos del torneo actual")
     return found[0]
+
+
+@app.get("/simulation")
+def simulation(conn=Depends(db)):
+    """Probabilidad de llegar a la final y de ser campeón para los equipos en cuadrangulares."""
+    return rows(conn, """
+        SELECT t.name AS team, s.grupo, s.cabeza_de_serie, s.puesto_fase1, s.pts_esperados, s.p_final, s.p_campeon,
+               s.partidos_jugados, s.simulaciones
+        FROM simulation s JOIN teams t ON t.team_id = s.team_id
+        ORDER BY s.p_campeon DESC""")
+
+
+@app.get("/")
+def root():
+    return {"proyecto": "Fútbol Analytics Colombia", "documentacion": "/docs",
+            "ejemplos": ["/standings", "/simulation", "/scorers?season=2026", "/predict?home_id=5488&away_id=5484"]}

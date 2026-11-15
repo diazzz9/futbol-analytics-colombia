@@ -1,9 +1,161 @@
-jugador,goles,penales
-Hugo Rodallega,71,21
-Wilson Morelo,22,6
-Hárold Mosquera,14,1
-Nahuel Bustos,11,2
-Franco Fagúndez,10,0
-Omar Fernández,9,0
-Andrey Estupiñán,8,2
-Jersson González,8,0
+equipo,jugador,goles,penales
+Cali,Andrey Estupiñán,14,6
+Cali,Kevin Velasco,13,7
+Cali,Avilés Hurtado,12,6
+Cali,Luis Sandoval,12,3
+Cali,Steven Rodríguez,12,1
+Cali,Gustavo Ramírez,9,1
+Cali,Johan Andrés Martínez,9,0
+Cali,Teófilo Gutiérrez,8,2
+Medellín,Luciano Pons,26,1
+Medellín,Brayan Léon Muñiz,25,0
+Medellín,Diber Cambindo,20,1
+Medellín,Edwin Cetre,20,13
+Medellín,Diego Moreno,17,0
+Medellín,Francisco Fydriszewski,17,3
+Medellín,Andres Cadavid,13,8
+Medellín,Francisco Chaverra,12,3
+Once Caldas,Dayro Moreno,72,22
+Once Caldas,Jefry Zapata,25,0
+Once Caldas,Michael Barrios,18,2
+Once Caldas,Ayron Del Valle,11,7
+Once Caldas,Billy Arce,7,0
+Once Caldas,Jorge Cardona,7,0
+Once Caldas,Mateo Zuleta,6,0
+Once Caldas,Fainer Torijano,5,0
+Junior,Carlos Bacca,55,14
+Junior,Luis González,25,7
+Junior,Steven Rodríguez,25,11
+Junior,Guillermo Paiva,17,3
+Junior,Luis Muriel,17,7
+Junior,Didier Moreno,16,0
+Junior,Brayan Castrillón,13,1
+Junior,José Enamorado,13,0
+Fortaleza,Andrés Arroyo,13,3
+Fortaleza,Emilio Aristizábal,12,3
+Fortaleza,Adrián Parra,7,0
+Fortaleza,Nicolás Rodríguez,7,0
+Fortaleza,Santiago Córdoba,7,3
+Fortaleza,Juan Sebastian Herrera,5,0
+Fortaleza,Daniel Rivera,4,0
+Fortaleza,Hayen Palacios,4,0
+Nacional,Alfredo Morelos,39,5
+Nacional,Jefferson Duque,31,12
+Nacional,Edwin Cardona,28,12
+Nacional,Andrés Sarmiento,22,0
+Nacional,Andres Román,20,0
+Nacional,Dorlan Pabón,18,7
+Nacional,Dairon Asprilla,11,0
+Nacional,Juan Manuel Rengifo,10,0
+Chicó,Jairo Molina,18,3
+Chicó,Henry Plazas,13,1
+Chicó,Wilmar Cruz,13,0
+Chicó,Michael Gómez,11,1
+Chicó,Frank Lozano,10,1
+Chicó,Geimer Balanta,7,3
+Chicó,Louis Pena,7,1
+Chicó,Sebastián Colón,5,0
+Millonarios,Leonardo Castro,50,9
+Millonarios,Beckham Castro,17,1
+Millonarios,Daniel Ruíz,17,3
+Millonarios,David Silva,15,0
+Millonarios,Jader Valencia,15,1
+Millonarios,Juan Pereira,13,4
+Millonarios,Radamel Falcao,12,3
+Millonarios,Daniel Cataño,11,0
+Pasto,Daniel Moreno,19,8
+Pasto,Facundo Boné,14,4
+Pasto,Andrey Estupiñán,13,4
+Pasto,Adrián Estacio,11,0
+Pasto,Diego Chavez,10,1
+Pasto,Edwar López,10,7
+Pasto,Yoshan Valois,10,0
+Pasto,Darwin López,8,0
+Pereira,Leonardo Castro,25,1
+Pereira,Carlos Ramirez,21,15
+Pereira,Darwin Quintero,20,3
+Pereira,Yuber Quiñones,14,1
+Pereira,Brayan Léon Muñiz,10,0
+Pereira,Alejandro Piedrahita,8,0
+Pereira,Yesus Cabrera,8,4
+Pereira,Angelo Rodríguez,7,0
+Santa Fe,Hugo Rodallega,71,21
+Santa Fe,Wilson Morelo,22,6
+Santa Fe,Hárold Mosquera,14,1
+Santa Fe,Nahuel Bustos,11,2
+Santa Fe,Franco Fagúndez,10,0
+Santa Fe,Omar Fernández,9,0
+Santa Fe,Andrey Estupiñán,8,2
+Santa Fe,Jersson González,8,0
+Tolima,Yeison Guzmán,26,9
+Tolima,Adrián Parra,19,0
+Tolima,Brayan Gil,17,0
+Tolima,Diego Herazo,14,3
+Tolima,Gonzalo Lencina,12,2
+Tolima,Jeison Lucumi,12,0
+Tolima,Jersson González,10,0
+Tolima,Juan Pablo Nieto,10,0
+Cúcuta,Jaime Peralta,10,1
+Cúcuta,Leider Berdugo,7,5
+Cúcuta,Luifer Hernández,6,0
+Cúcuta,Gustavo Torres,4,0
+Cúcuta,Carlos Rentería,3,0
+Cúcuta,Dayan Pérez,3,0
+Cúcuta,Diego Calcaterra,2,0
+Cúcuta,Lucas Ríos,2,0
+Bucaramanga,Luciano Pons,33,6
+Bucaramanga,Dayro Moreno,22,2
+Bucaramanga,Fabián Sambueza,19,3
+Bucaramanga,Enmerson Batalla,12,0
+Bucaramanga,Jhon Córdoba,11,0
+Bucaramanga,Gonzalo Lencina,9,1
+Bucaramanga,Carlos Henao,8,2
+Bucaramanga,Daniel Mosquera,8,1
+Inter Bogotá,David Camacho,17,0
+Inter Bogotá,Pablo Sabbag,15,6
+Inter Bogotá,Francisco Chaverra,12,2
+Inter Bogotá,Fabricio Sanguinetti,10,1
+Inter Bogotá,Elan Ricardo,9,3
+Inter Bogotá,Pablo Lima,9,5
+Inter Bogotá,Kevin Viveros,8,1
+Inter Bogotá,Facundo Boné,7,3
+Llaneros,Jhon Vásquez,7,4
+Llaneros,Néider Ospina,7,1
+Llaneros,Carlos Cortés,6,1
+Llaneros,Francisco Meza,5,0
+Llaneros,Michael Rangel,5,0
+Llaneros,Andrés López,3,0
+Llaneros,Bryan Urueña,3,0
+Llaneros,Carlos Sierra,3,0
+América,Adrián Ramos,35,5
+América,Cristian Barrios,24,1
+América,Yeison Guzmán,20,9
+América,Rodrigo Holgado,17,3
+América,Duván Vergara,15,4
+América,Andrés Sarmiento,13,0
+América,Facundo Suárez,10,0
+América,Carlos Sierra,9,0
+Alianza,Carlos Gonzalez,11,4
+Alianza,Felipe Pardo,11,4
+Alianza,Mayer Gil,11,0
+Alianza,Sebastian Acosta,11,3
+Alianza,Andrés Rentería,10,0
+Alianza,Pablo Bueno,10,1
+Alianza,Jesús Muñoz,9,0
+Alianza,Misael Martínez,9,1
+Águilas Doradas,Marco Pérez,42,15
+Águilas Doradas,Fredy Salazar,18,4
+Águilas Doradas,Jesús Rivas,16,1
+Águilas Doradas,Jorge Rivaldo,16,3
+Águilas Doradas,Jeisson Quiñones,13,5
+Águilas Doradas,Wilson Morelo,10,2
+Águilas Doradas,Yony González,10,3
+Águilas Doradas,Antony Vásquez,9,0
+Jaguares,Andrés Rentería,18,5
+Jaguares,Pablo Rojas,14,7
+Jaguares,Jhonier Viveros,9,2
+Jaguares,Wilson Morelo,8,2
+Jaguares,Darwin López,6,0
+Jaguares,Omar Duarte,6,1
+Jaguares,Duvan Rodríguez,5,0
+Jaguares,Cristian Alvarez,4,0

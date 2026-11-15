@@ -1,4 +1,5 @@
 """Descarga los partidos de la Liga BetPlay desde la API pública de ESPN y los guarda en data/raw/."""
+import datetime
 import json
 import sys
 import urllib.request
@@ -48,4 +49,4 @@ def main(years):
 
 
 if __name__ == "__main__":
-    main([int(y) for y in sys.argv[1:]] or range(2022, 2027))
+    main([int(y) for y in sys.argv[1:]] or range(2022, datetime.date.today().year + 1))

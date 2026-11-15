@@ -1,0 +1,9 @@
+{
+  "season": 2026,
+  "tournament": "Clausura",
+  "groups": {
+    "A": ["Atlético Nacional", "Once Caldas", "Independiente Santa Fe", "Independiente Medellín"],
+    "B": ["América de Cali", "Atlético Bucaramanga", "Millonarios", "Deportivo Cali"]
+  },
+  "seeds": ["Atlético Nacional", "América de Cali"]
+}

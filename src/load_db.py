@@ -25,7 +25,9 @@ def main():
         matches = pd.read_csv(PROCESSED / "matches.csv", parse_dates=["kickoff"])
         events = pd.read_csv(PROCESSED / "events.csv")
         preds = pd.read_csv(PROCESSED / "predictions.csv").drop(columns=["most_likely_score"])
-        for name, df in (("teams", teams), ("matches", matches), ("events", events), ("predictions", preds)):
+        sim = pd.read_csv(PROCESSED / "simulation.csv").drop(columns=["name"])
+        tables = (("teams", teams), ("matches", matches), ("events", events), ("predictions", preds), ("simulation", sim))
+        for name, df in tables:
             df.to_sql(name, conn, if_exists="append", index=False, chunksize=1000)
             print(f"{name}: {len(df)} filas")
 
