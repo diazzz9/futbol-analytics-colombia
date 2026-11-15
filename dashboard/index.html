@@ -12,6 +12,7 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.45}
 .sf{--sf:#c8102e;--sf2:#ffffff;--sf-ink:#ffffff;display:grid;gap:36px;max-width:1120px;margin:0 auto;padding:28px 20px 56px}
+.sf > *,.sf-grid2 > *{min-width:0}
 .sf-head{position:relative;padding-left:28px}
 .sf-head::before{content:"";position:absolute;left:0;top:0;bottom:0;width:10px;background:linear-gradient(var(--sf) 50%,var(--sf2) 50%);outline:1px solid var(--line)}
 .sf-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
@@ -21,6 +22,13 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-
 .sf-lead{margin:0;max-width:62ch;font-size:18px}
 .sf-lead b{font-weight:600;font-variant-numeric:tabular-nums}
 select{font:inherit;color:var(--fg);background:var(--pop);border:1px solid var(--line);border-radius:6px;padding:6px 10px}
+.sf-hero[hidden],.sf-out[hidden]{display:none}
+.sf-hero{display:flex;flex-wrap:wrap;gap:14px 64px;align-items:flex-end;min-width:0}
+.sf-hero h3{margin:0 0 4px;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.sf-big{display:inline-block;white-space:nowrap;font-family:var(--serif);font-size:clamp(3.6rem,12vw,6.4rem);line-height:1;font-variant-numeric:tabular-nums;padding-bottom:6px;border-bottom:8px solid var(--sf)}
+.sf-big2{font-size:clamp(2.8rem,9vw,4.6rem);border-bottom-color:var(--sf2);box-shadow:0 1px 0 var(--line)}
+.sf-hero .sf-sub{flex-basis:100%}
+.sf-out{margin:0;padding:12px 14px;border:1px solid var(--line);color:var(--muted)}
 .sf-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border-top:1px solid var(--fg);border-bottom:1px solid var(--line)}
 .sf-kpi{padding:14px 14px 14px 0}
 .sf-kpi h3{margin:0;font-size:12px;font-weight:600;color:var(--muted)}
@@ -69,6 +77,13 @@ select{font:inherit;color:var(--fg);background:var(--pop);border:1px solid var(-
   <h1 class="sf-h1"><span class="sf-badge" id="escudo"></span><span data-f="equipo">—</span>, en datos</h1>
   <p class="sf-lead"><b data-f="equipo">—</b> terminó el todos contra todos en el puesto <b data-f="pos">—</b> con <b data-f="pts">—</b> puntos en <b data-f="pj">—</b> partidos<span id="alt-resto">, a <b id="brecha">—</b> del líder, <b data-f="lider">—</b></span><span id="alt-lider" hidden>, como líder</span>. Su último partido fue un <b data-f="ultimo_marcador">—</b> de <span data-f="ultimo_cond">—</span> contra <b data-f="ultimo_rival">—</b>.</p>
 </header>
+
+<section class="sf-hero" id="hero">
+  <div><h3>Probabilidad de ser campeón</h3><div class="sf-big" id="h-campeon">—</div></div>
+  <div><h3>Probabilidad de llegar a la final</h3><div class="sf-big sf-big2" id="h-final">—</div></div>
+  <p class="sf-sub" id="h-nota"></p>
+</section>
+<p class="sf-out" id="hero-out" hidden>No clasificó a los cuadrangulares: terminó fuera de los ocho primeros del todos contra todos.</p>
 
 <section class="sf-kpis">
   <div class="sf-kpi"><h3>Posición</h3><div class="sf-num"><span data-f="pos">—</span>.º</div><p class="sf-sub">de 20 equipos; clasifican 8</p></div>
@@ -189,6 +204,9 @@ function drawHeader() {
   else { const v = +r.ppp_cambio; ce.textContent = (v > 0 ? '+' : v < 0 ? '−' : '') + es(Math.abs(v), 2); ce.style.color = v > 0 ? 'var(--ok)' : v < 0 ? 'var(--bad)' : ''; }
   const names = { G: 'Ganado', E: 'Empatado', P: 'Perdido' };
   $('racha').replaceChildren(...String(r.racha5).split('').map((k) => { const s = document.createElement('span'); s.className = 'sf-chip sf-chip-' + k; s.textContent = k; s.setAttribute('aria-label', names[k] || k); return s; }));
+  const sim = D.simulacion.find((q) => q.equipo === team);
+  $('hero').hidden = !sim; $('hero-out').hidden = !!sim || !D.simulacion.length;
+  if (sim) { $('h-campeon').textContent = es(sim.p_campeon, 1) + ' %'; $('h-final').textContent = es(sim.p_final, 1) + ' %'; $('h-nota').textContent = 'Según ' + show(sim.simulaciones) + ' simulaciones de los cuadrangulares y la final · grupo ' + sim.grupo + (sim.cabeza === 'sí' ? ' · cabeza de serie con punto invisible' : ''); }
   $('sims').textContent = D.simulacion[0] ? show(D.simulacion[0].simulaciones) : '—';
   document.title = team + ' en datos · Liga BetPlay';
 }
