@@ -1,0 +1,4 @@
+modelo,partidos,acierto_pct,log_loss,brier
+Frecuencias históricas,620,46.6,1.059,0.639
+Elo,620,47.6,1.044,0.623
+Poisson (este modelo),620,49.8,1.014,0.608
