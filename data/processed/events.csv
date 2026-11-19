@@ -272,7 +272,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 271,626467,17374,33,0,amarilla,Yellow Card,False,False,James Sánchez
 272,626467,5485,45,3,amarilla,Yellow Card,False,False,Mariano Vazquez
 273,626467,17374,45,3,amarilla,Yellow Card,False,False,Carlos Bejarano
-274,626467,5485,90,1,amarilla,Yellow Card,False,False,Diego Martinez Marin
+274,626467,5485,90,1,amarilla,Yellow Card,False,False,Diego Martinez
 275,626467,5485,90,4,amarilla,Yellow Card,False,False,Gilberto García
 276,626472,10309,8,0,gol,Goal,False,False,Jhonier Viveros
 277,626472,9773,15,0,amarilla,Yellow Card,False,False,José Luis Moreno
@@ -992,7 +992,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 991,626389,5485,46,0,amarilla,Yellow Card,False,False,Santiago Orozco
 992,626389,5485,54,0,amarilla,Yellow Card,False,False,Facundo Ospitaleche
 993,626389,5485,56,0,gol,Goal,False,False,Victor Arboleda
-994,626389,5485,63,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+994,626389,5485,63,0,amarilla,Yellow Card,False,False,Diego Martinez
 995,626389,4815,65,0,gol,Goal - Header,False,False,Carmelo Valencia
 996,626389,5485,76,0,amarilla,Yellow Card,False,False,
 997,626389,5485,86,0,amarilla,Yellow Card,False,False,Mariano Vazquez
@@ -1140,7 +1140,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 1139,626369,9767,27,0,amarilla,Yellow Card,False,False,Andrés Rivera
 1140,626369,5485,39,0,gol,Goal,False,False,Facundo Ospitaleche
 1141,626369,5485,57,0,roja,Red Card,False,False,Juan José Vásquez
-1142,626369,5485,73,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+1142,626369,5485,73,0,amarilla,Yellow Card,False,False,Diego Martinez
 1143,626369,5485,77,0,roja,Red Card,False,False,Mariano Vazquez
 1144,626369,5485,84,0,amarilla,Yellow Card,False,False,Facundo Ospitaleche
 1145,626369,5485,90,4,amarilla,Yellow Card,False,False,Juan Garavito
@@ -1219,7 +1219,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 1218,626357,5485,65,0,amarilla,Yellow Card,False,False,Juan Garavito
 1219,626357,5485,75,0,gol,Penalty - Scored,True,False,Duvier Riascos
 1220,626357,5486,80,0,amarilla,Yellow Card,False,False,Jhonny Vásquez
-1221,626357,5485,90,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+1221,626357,5485,90,0,amarilla,Yellow Card,False,False,Diego Martinez
 1222,626357,5486,90,0,gol,Penalty - Scored,True,False,Carlos Ramirez
 1223,626357,5485,90,3,gol,Goal - Header,False,False,Hassan Vergara
 1224,626357,5486,90,11,amarilla,Yellow Card,False,False,Juan Pablo Zuluaga
@@ -2402,7 +2402,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 2401,626779,5485,41,0,amarilla,Yellow Card,False,False,Jeison Medina
 2402,626779,2919,42,0,amarilla,Yellow Card,False,False,Dannovi Quinones
 2403,626779,5485,52,0,amarilla,Yellow Card,False,False,Juan Camilo Roa
-2404,626779,5485,70,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+2404,626779,5485,70,0,amarilla,Yellow Card,False,False,Diego Martinez
 2405,626779,2919,79,0,amarilla,Yellow Card,False,False,Santiago Mera
 2406,626779,2919,89,0,amarilla,Yellow Card,False,False,Marlon Piedrahita
 2407,626847,10309,14,0,amarilla,Yellow Card,False,False,Elian Villalobos
@@ -2590,7 +2590,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 2589,626756,5485,47,0,gol,Goal - Header,False,False,Cristian Tovar
 2590,626756,5485,49,0,amarilla,Yellow Card,False,False,Cristian Tovar
 2591,626756,5485,62,0,gol,Goal,False,False,Kevin Riascos
-2592,626756,5485,85,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+2592,626756,5485,85,0,amarilla,Yellow Card,False,False,Diego Martinez
 2593,626756,10309,90,5,amarilla,Yellow Card,False,False,Iván Scarpeta
 2594,626758,9773,9,0,gol,Goal,False,False,Cristian Barrios
 2595,626758,9773,15,0,gol,Goal,False,False,Darwin López
@@ -2757,7 +2757,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 2756,626736,4815,58,0,amarilla,Yellow Card,False,False,Daniel Giraldo
 2757,626736,5485,64,0,gol,Goal,False,False,Adrián Estacio
 2758,626736,5485,79,0,amarilla,Yellow Card,False,False,Adrián Estacio
-2759,626736,5485,90,2,amarilla,Yellow Card,False,False,Diego Martinez Marin
+2759,626736,5485,90,2,amarilla,Yellow Card,False,False,Diego Martinez
 2760,626736,5485,90,3,amarilla,Yellow Card,False,False,César Quintero
 2761,626736,5485,90,5,roja,Red Card,False,False,Jeison Medina
 2762,626732,5264,3,0,gol,Goal,False,False,Andrés Andrade
@@ -2814,7 +2814,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 2813,626725,5485,49,0,amarilla,Yellow Card,False,False,Kevin Riascos
 2814,626725,5485,52,0,amarilla,Yellow Card,False,False,César Quintero
 2815,626725,7445,52,0,gol,Goal,False,False,Pablo Sabbag
-2816,626725,5485,55,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+2816,626725,5485,55,0,amarilla,Yellow Card,False,False,Diego Martinez
 2817,626725,7445,56,0,amarilla,Yellow Card,False,False,Bleiner Agrón
 2818,626725,5485,58,0,gol,Goal - Free-kick,False,False,Adrián Estacio
 2819,626725,7445,69,0,roja,Red Card,False,False,Francisco Chaverra
@@ -3117,7 +3117,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 3116,626686,9773,27,0,amarilla,Yellow Card,False,False,Mateo Rodas
 3117,626686,5485,32,0,roja,Red Card,False,False,César Quintero
 3118,626686,5485,33,0,amarilla,Yellow Card,False,False,Kevin Riascos
-3119,626686,5485,45,4,amarilla,Yellow Card,False,False,Diego Martinez Marin
+3119,626686,5485,45,4,amarilla,Yellow Card,False,False,Diego Martinez
 3120,626686,5485,45,6,amarilla,Yellow Card,False,False,Facundo Ospitaleche
 3121,626686,9773,45,8,gol,Penalty - Scored,True,False,Iván Rivas
 3122,626686,9773,80,0,amarilla,Yellow Card,False,False,Luis Pérez
@@ -3912,7 +3912,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 3911,662309,2672,90,9,amarilla,Yellow Card,False,False,Juan José Tello
 3912,662305,5485,59,0,amarilla,Yellow Card,False,False,Adrián Estacio
 3913,662305,5485,63,0,amarilla,Yellow Card,False,False,Cristian Tovar
-3914,662305,5485,69,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+3914,662305,5485,69,0,amarilla,Yellow Card,False,False,Diego Martinez
 3915,662305,5485,78,0,gol,Penalty - Scored,True,False,Edwar López
 3916,662305,5488,84,0,amarilla,Yellow Card,False,False,Julian Millan
 3917,662305,5488,90,0,amarilla,Yellow Card,False,False,José Aja
@@ -4174,7 +4174,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 4173,662283,9761,41,0,amarilla,Yellow Card,False,False,Harrison Mojica
 4174,662283,9761,46,0,amarilla,Yellow Card,False,False,Ruben Manjarres
 4175,662283,9761,48,0,amarilla,Yellow Card,False,False,Ferlys García
-4176,662283,5485,59,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+4176,662283,5485,59,0,amarilla,Yellow Card,False,False,Diego Martinez
 4177,662283,9761,76,0,amarilla,Yellow Card,False,False,José Chunga
 4178,662283,9761,81,0,gol,Goal - Volley,False,False,Mayer Gil
 4179,662283,5485,87,0,gol,Goal - Free-kick,False,False,Gilberto García
@@ -4351,7 +4351,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 4350,662212,5485,29,0,amarilla,Yellow Card,False,False,Edwar López
 4351,662212,5485,44,0,amarilla,Yellow Card,False,False,Johan Caicedo
 4352,662212,5485,51,0,amarilla,Yellow Card,False,False,Darwin López
-4353,662212,5485,58,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+4353,662212,5485,58,0,amarilla,Yellow Card,False,False,Diego Martinez
 4354,662212,5484,58,0,gol,Goal,False,False,Israel Alba
 4355,662212,5484,69,0,amarilla,Yellow Card,False,False,Israel Alba
 4356,662212,5484,76,0,amarilla,Yellow Card,False,False,Fernando Uribe
@@ -4455,7 +4455,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 4454,662366,10309,37,0,amarilla,Yellow Card,False,False,Julián Guevara
 4455,662366,5485,45,2,amarilla,Yellow Card,False,False,Yilson Rosales
 4456,662366,5485,65,0,gol,Goal - Header,False,False,Camilo Ayala
-4457,662366,5485,74,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+4457,662366,5485,74,0,amarilla,Yellow Card,False,False,Diego Martinez
 4458,662366,5485,90,1,amarilla,Yellow Card,False,False,Darwin López
 4459,662366,10309,90,3,amarilla,Yellow Card,False,False,Nelino Tapia
 4460,662370,7445,16,0,amarilla,Yellow Card,False,False,Alejandro Prieto
@@ -5205,7 +5205,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 5204,662457,2690,71,0,amarilla,Yellow Card,False,False,Jhon Palacios
 5205,662457,5485,78,0,amarilla,Yellow Card,False,False,Didier Pino
 5206,662457,5485,81,0,amarilla,Yellow Card,False,False,Jerson Malagón
-5207,662457,5485,90,8,amarilla,Yellow Card,False,False,Diego Martinez Marin
+5207,662457,5485,90,8,amarilla,Yellow Card,False,False,Diego Martinez
 5208,662457,2690,90,10,gol,Penalty - Scored,True,False,Edwin Cetre
 5209,662457,2690,90,12,amarilla,Yellow Card,False,False,Edwin Cetre
 5210,662457,5485,90,12,roja,Red Card,False,False,
@@ -5578,7 +5578,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 5577,662668,5485,72,0,amarilla,Yellow Card,False,False,Camilo Ayala
 5578,662668,5485,79,0,roja,Red Card,False,False,Jesus Quintero
 5579,662668,9761,84,0,amarilla,Yellow Card,False,False,Diego Valdes
-5580,662668,5485,90,3,amarilla,Yellow Card,False,False,Diego Martinez Marin
+5580,662668,5485,90,3,amarilla,Yellow Card,False,False,Diego Martinez
 5581,662675,5484,87,0,amarilla,Yellow Card,False,False,Daniel Cataño
 5582,662675,5486,88,0,amarilla,Yellow Card,False,False,Juan Pablo Zuluaga
 5583,662675,5486,90,1,amarilla,Yellow Card,False,False,Juan Moreno
@@ -7013,7 +7013,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 7012,662857,5481,10,0,gol,Goal - Volley,False,False,Bayron Garces
 7013,662857,5481,74,0,amarilla,Yellow Card,False,False,Felix Charrupí
 7014,662857,5485,80,0,amarilla,Yellow Card,False,False,Jerson Malagón
-7015,662857,5485,82,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+7015,662857,5485,82,0,amarilla,Yellow Card,False,False,Diego Martinez
 7016,662857,5485,85,0,amarilla,Yellow Card,False,False,Johan Campaña
 7017,662857,5485,88,0,amarilla,Yellow Card,False,False,Duvan Riascos
 7018,662857,5485,90,5,amarilla,Yellow Card,False,False,Daniel Moreno
@@ -8109,7 +8109,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 8108,693700,5485,64,0,amarilla,Yellow Card,False,False,Santiago Gómez
 8109,693700,5485,71,0,amarilla,Yellow Card,False,False,Víctor Mejía
 8110,693700,9761,71,0,amarilla,Yellow Card,False,False,Ruyery Blanco
-8111,693700,5485,71,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+8111,693700,5485,71,0,amarilla,Yellow Card,False,False,Diego Martinez
 8112,693700,9761,76,0,amarilla,Yellow Card,False,False,Freddy Flórez
 8113,693700,9761,83,0,amarilla,Yellow Card,False,False,Andrés Rentería
 8114,693699,4815,7,0,gol,Goal,False,False,Deiber Caicedo
@@ -8699,7 +8699,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 8698,693758,7445,56,0,gol,Goal,False,False,Johan Rojas
 8699,693758,7445,83,0,gol,Goal,False,False,Léiner Escalante
 8700,693758,5485,90,1,amarilla,Yellow Card,False,False,Nicolás Gil
-8701,693758,5485,90,6,amarilla,Yellow Card,False,False,Diego Martinez Marin
+8701,693758,5485,90,6,amarilla,Yellow Card,False,False,Diego Martinez
 8702,693769,5264,21,0,gol,Goal,False,False,Édier Ocampo
 8703,693769,5489,35,0,roja,Red Card,False,False,Junior Hernández
 8704,693769,5264,51,0,gol,Goal - Header,False,False,Juan Felipe Aguirre
@@ -9636,7 +9636,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 9635,714301,5485,39,0,amarilla,Yellow Card,False,False,José Cuenú
 9636,714301,5485,42,0,amarilla,Yellow Card,False,False,Kevin Londoño
 9637,714301,5485,82,0,gol,Goal - Header,False,False,José Cuenú
-9638,714301,5485,90,3,amarilla,Yellow Card,False,False,Diego Martinez Marin
+9638,714301,5485,90,3,amarilla,Yellow Card,False,False,Diego Martinez
 9639,714244,8109,32,0,gol,Goal,False,False,Cristian Barrios
 9640,714244,8109,43,0,amarilla,Yellow Card,False,False,Harold Rivera
 9641,714244,8109,55,0,amarilla,Yellow Card,False,False,Andres Mosquera
@@ -9877,7 +9877,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 9876,714332,5485,57,0,gol,Goal,False,False,Daniel Moreno
 9877,714332,5485,62,0,amarilla,Yellow Card,False,False,Diego Chavez
 9878,714332,9761,77,0,amarilla,Yellow Card,False,False,Efraín Navarro
-9879,714332,5485,90,2,amarilla,Yellow Card,False,False,Diego Martinez Marin
+9879,714332,5485,90,2,amarilla,Yellow Card,False,False,Diego Martinez
 9880,714327,2672,15,0,gol,Goal,False,False,Gian Cabezas
 9881,714327,9773,54,0,amarilla,Yellow Card,False,False,Sebastian Moreno
 9882,714327,2672,61,0,amarilla,Yellow Card,False,False,Andrey Estupiñán
@@ -9925,7 +9925,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 9924,714338,5264,49,0,amarilla,Yellow Card,False,False,Juan Felipe Aguirre
 9925,714338,5264,57,0,amarilla,Yellow Card,False,False,Juan Zapata
 9926,714338,5485,82,0,gol,Goal,False,False,Daniel Moreno
-9927,714338,5485,88,0,roja,Red Card,False,False,Diego Martinez Marin
+9927,714338,5485,88,0,roja,Red Card,False,False,Diego Martinez
 9928,714338,5485,90,0,amarilla,Yellow Card,False,False,Camilo Ayala
 9929,714338,5485,90,2,amarilla,Yellow Card,False,False,Cristian Arrieta
 9930,714338,5264,90,6,gol,Goal,False,False,Andres Román
@@ -10617,7 +10617,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 10616,723685,5485,74,0,amarilla,Yellow Card,False,False,José Cuenú
 10617,723685,5488,83,0,amarilla,Yellow Card,False,False,Iván Scarpeta
 10618,723685,5485,86,0,amarilla,Yellow Card,False,False,Israel Alba
-10619,723685,5485,87,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+10619,723685,5485,87,0,amarilla,Yellow Card,False,False,Diego Martinez
 10620,723686,5484,3,0,gol,Goal,False,False,Leonardo Castro
 10621,723686,5484,26,0,amarilla,Yellow Card,False,False,Leonardo Castro
 10622,723686,5264,28,0,gol,Goal,False,False,Marino Hinestroza
@@ -10731,7 +10731,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 10730,724182,5489,82,0,amarilla,Yellow Card,False,False,William Cuesta
 10731,724182,2919,90,5,amarilla,Yellow Card,False,False,
 10732,724182,2919,90,8,amarilla,Yellow Card,False,False,Dayro Moreno
-10733,724183,5485,58,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+10733,724183,5485,58,0,amarilla,Yellow Card,False,False,Diego Martinez
 10734,724183,5485,58,0,roja,Red Card,False,False,Santiago Tréllez
 10735,724183,5485,59,0,amarilla,Yellow Card,False,False,Ray Vanegas
 10736,724183,5484,83,0,amarilla,Yellow Card,False,False,Daniel Ruíz
@@ -10921,7 +10921,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 10920,730333,5480,74,0,gol,Goal - Header,False,False,Frank Lozano
 10921,730333,5480,75,0,amarilla,Yellow Card,False,False,Sebastián Colón
 10922,730333,5480,80,0,amarilla,Yellow Card,False,False,Frank Lozano
-10923,730331,8109,5,0,gol,Own Goal,False,True,Diego Martinez Marin
+10923,730331,8109,5,0,gol,Own Goal,False,True,Diego Martinez
 10924,730331,5485,18,0,gol,Goal,False,False,Israel Alba
 10925,730331,5485,32,0,amarilla,Yellow Card,False,False,Mauricio Castano
 10926,730331,8109,45,2,amarilla,Yellow Card,False,False,Cristian Tovar
@@ -10930,7 +10930,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 10929,730331,5485,73,0,amarilla,Yellow Card,False,False,Fabian Villa
 10930,730331,5485,75,0,amarilla,Yellow Card,False,False,Luis Caicedo
 10931,730331,8109,87,0,roja,Red Card,False,False,Jan Lucumí
-10932,730331,5485,90,6,amarilla,Yellow Card,False,False,Diego Martinez Marin
+10932,730331,5485,90,6,amarilla,Yellow Card,False,False,Diego Martinez
 10933,730339,4815,5,0,roja,Red Card,False,False,Santiago Mele
 10934,730339,17374,12,0,amarilla,Yellow Card,False,False,Martín Payares
 10935,730339,17374,57,0,amarilla,Yellow Card,False,False,Fabián Cantillo
@@ -11079,7 +11079,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 11078,730355,5481,33,0,amarilla,Yellow Card,False,False,Johan Hinestroza
 11079,730355,5485,35,0,gol,Goal - Header,False,False,Gustavo Torres
 11080,730355,5485,37,0,amarilla,Yellow Card,False,False,Felipe Jaramillo
-11081,730355,5485,66,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+11081,730355,5485,66,0,amarilla,Yellow Card,False,False,Diego Martinez
 11082,730355,5485,89,0,amarilla,Yellow Card,False,False,Johan Caicedo
 11083,730355,5485,90,3,amarilla,Yellow Card,False,False,Luis Caicedo
 11084,730355,5485,90,6,amarilla,Yellow Card,False,False,
@@ -11209,7 +11209,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 11208,730365,5481,90,8,amarilla,Yellow Card,False,False,Santiago Londoño
 11209,730364,17374,8,0,amarilla,Yellow Card,False,False,Daniel Mera
 11210,730364,17374,21,0,amarilla,Yellow Card,False,False,Orles Aragón
-11211,730364,5485,31,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+11211,730364,5485,31,0,amarilla,Yellow Card,False,False,Diego Martinez
 11212,730364,5485,38,0,amarilla,Yellow Card,False,False,Luis Caicedo
 11213,730364,17374,42,0,gol,Goal,False,False,Valentín Sánchez
 11214,730364,5485,45,4,gol,Goal,False,False,Mauricio Castano
@@ -13168,7 +13168,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 13167,750617,5481,78,0,amarilla,Yellow Card,False,False,Geindry Cuervo
 13168,750617,5481,80,0,amarilla,Yellow Card,False,False,Edison López
 13169,750617,5485,80,0,amarilla,Yellow Card,False,False,Patrick Preciado
-13170,750617,5485,84,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+13170,750617,5485,84,0,amarilla,Yellow Card,False,False,Diego Martinez
 13171,750617,5485,86,0,roja,Red Card,False,False,Johan Caicedo
 13172,750617,5481,90,8,amarilla,Yellow Card,False,False,Julián Palacio
 13173,750641,9761,23,0,amarilla,Yellow Card,False,False,Leonardo Saldaña
@@ -14714,7 +14714,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 14713,401843175,10309,70,0,gol,Goal,False,False,Cristian Alvarez
 14714,401843175,10309,73,0,amarilla,Yellow Card,False,False,Jáder Maza
 14715,401843175,2672,73,0,amarilla,Yellow Card,False,False,Avilés Hurtado
-14716,401843175,10309,90,2,amarilla,Yellow Card,False,False,Diego Martinez Marin
+14716,401843175,10309,90,2,amarilla,Yellow Card,False,False,Diego Martinez
 14717,401843151,5489,8,0,gol,Goal,False,False,Juan Torres
 14718,401843151,5489,20,0,gol,Goal,False,False,Jersson González
 14719,401843151,5489,51,0,amarilla,Yellow Card,False,False,Juan Pablo Nieto
@@ -14958,7 +14958,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 14957,401850743,2919,66,0,amarilla,Yellow Card,False,False,Mateo Zuleta
 14958,401850743,10309,70,0,amarilla,Yellow Card,False,False,Johan Hinestroza
 14959,401850743,2919,86,0,amarilla,Yellow Card,False,False,Joan Parra
-14960,401850743,10309,90,1,amarilla,Yellow Card,False,False,Diego Martinez Marin
+14960,401850743,10309,90,1,amarilla,Yellow Card,False,False,Diego Martinez
 14961,401850743,2919,90,8,amarilla,Yellow Card,False,False,Dayro Moreno
 14962,401850743,2919,90,13,amarilla,Yellow Card,False,False,Jaime Alvarado Hoyos
 14963,401850744,7915,31,0,gol,Goal,False,False,Kevin Caicedo
@@ -15068,7 +15068,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 15067,401850758,10309,66,0,amarilla,Yellow Card,False,False,Kahiser Lenis
 15068,401850758,10309,71,0,amarilla,Yellow Card,False,False,Duvan Rodríguez
 15069,401850758,5486,90,2,amarilla,Yellow Card,False,False,Yuber Quiñones
-15070,401850758,10309,90,3,amarilla,Yellow Card,False,False,Diego Martinez Marin
+15070,401850758,10309,90,3,amarilla,Yellow Card,False,False,Diego Martinez
 15071,401850759,2690,1,0,amarilla,Yellow Card,False,False,Leyser Chaverra
 15072,401850759,2690,16,0,gol,Goal,False,False,Didier Moreno
 15073,401850759,6101,43,0,roja,Red Card,False,False,Jhonatan Agudelo
@@ -15487,7 +15487,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 15486,401850860,7915,42,0,amarilla,Yellow Card,False,False,Luis Miranda
 15487,401850860,10309,49,0,amarilla,Yellow Card,False,False,Kahiser Lenis
 15488,401850860,10309,66,0,amarilla,Yellow Card,False,False,Mauricio Castano
-15489,401850860,7915,70,0,gol,Own Goal,False,True,Diego Martinez Marin
+15489,401850860,7915,70,0,gol,Own Goal,False,True,Diego Martinez
 15490,401850860,10309,75,0,amarilla,Yellow Card,False,False,Royscer Colpa
 15491,401850860,7915,79,0,amarilla,Yellow Card,False,False,Kelvin Osorio
 15492,401850806,6101,31,0,amarilla,Yellow Card,False,False,Diego Calcaterra
@@ -15906,7 +15906,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 15905,401850854,10309,40,0,amarilla,Yellow Card,False,False,Fabián Mosquera
 15906,401850854,10309,50,0,gol,Penalty - Scored,True,False,Yairo Moreno
 15907,401850854,5484,90,2,amarilla,Yellow Card,False,False,Diego Novoa
-15908,401850854,10309,90,7,amarilla,Yellow Card,False,False,Diego Martinez Marin
+15908,401850854,10309,90,7,amarilla,Yellow Card,False,False,Diego Martinez
 15909,401850855,2690,10,0,amarilla,Yellow Card,False,False,Enzo Larrosa
 15910,401850855,2690,63,0,amarilla,Yellow Card,False,False,Alexis Serna
 15911,401850855,2919,80,0,gol,Goal,False,False,Mateo Zuleta
@@ -17392,11 +17392,11 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 17391,401878069,9761,86,0,amarilla,Yellow Card,False,False,Leyner David Palacios Cordoba
 17392,401878069,2672,90,4,gol,Goal - Header,False,False,Alexis Castillo Manyoma
 17393,401877776,9762,35,0,amarilla,Yellow Card,False,False,Ricardo Márquez
-17394,401877776,10309,59,0,amarilla,Yellow Card,False,False,Diego Martinez Marin
+17394,401877776,10309,59,0,amarilla,Yellow Card,False,False,Diego Martinez
 17395,401877776,10309,60,0,amarilla,Yellow Card,False,False,Andrés Rentería
 17396,401877776,10309,62,0,amarilla,Yellow Card,False,False,Rafael Bustamante
 17397,401877776,9762,68,0,amarilla,Yellow Card,False,False,Jhon Melendez
-17398,401877776,10309,85,0,roja,Red Card,False,False,Diego Martinez Marin
+17398,401877776,10309,85,0,roja,Red Card,False,False,Diego Martinez
 17399,401877776,9762,90,0,gol,Penalty - Scored,True,False,Ricardo Márquez
 17400,401877776,9762,90,3,amarilla,Yellow Card,False,False,Juan Ávalo
 17401,401877776,9762,90,4,amarilla,Yellow Card,False,False,Andrés Ricaurte
