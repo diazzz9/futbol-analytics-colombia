@@ -18043,3 +18043,8 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 18042,401934707,2672,63,0,amarilla,Yellow Card,False,False,Fernando Álvarez
 18043,401934707,5484,88,0,amarilla,Yellow Card,False,False,Danovis Banguero
 18044,401934707,5484,90,2,amarilla,Yellow Card,False,False,Jhomier Guerrero
+18045,401934689,5264,2,0,amarilla,Yellow Card,False,False,Alfredo Morelos
+18046,401934689,5264,14,0,amarilla,Yellow Card,False,False,César Haydar
+18047,401934689,5264,39,0,roja,Red Card,False,False,Andrés Marín
+18048,401934689,5264,72,0,amarilla,Yellow Card,False,False,Mateus Uribe
+18049,401934689,5264,90,1,amarilla,Yellow Card,False,False,William Tesillo
