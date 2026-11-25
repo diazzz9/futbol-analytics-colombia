@@ -7,21 +7,21 @@ Nacional,61-75,16,3
 Nacional,76-90,23,6
 América,1-15,7,8
 América,16-30,14,4
-América,31-45,9,7
-América,46-60,10,3
+América,31-45,10,7
+América,46-60,11,4
 América,61-75,13,2
 América,76-90,8,10
 Cali,1-15,7,1
 Cali,16-30,4,1
-Cali,31-45,9,6
-Cali,46-60,8,6
+Cali,31-45,9,7
+Cali,46-60,9,7
 Cali,61-75,10,10
 Cali,76-90,10,4
-Bucaramanga,1-15,9,4
-Bucaramanga,16-30,8,7
+Bucaramanga,1-15,9,5
+Bucaramanga,16-30,9,8
 Bucaramanga,31-45,15,9
-Bucaramanga,46-60,6,5
-Bucaramanga,61-75,7,5
+Bucaramanga,46-60,6,6
+Bucaramanga,61-75,7,6
 Bucaramanga,76-90,14,9
 Santa Fe,1-15,7,2
 Santa Fe,16-30,8,6
@@ -35,11 +35,11 @@ Medellín,31-45,7,14
 Medellín,46-60,11,4
 Medellín,61-75,8,6
 Medellín,76-90,14,10
-Millonarios,1-15,5,2
-Millonarios,16-30,7,4
+Millonarios,1-15,6,2
+Millonarios,16-30,8,5
 Millonarios,31-45,12,10
-Millonarios,46-60,13,8
-Millonarios,61-75,10,7
+Millonarios,46-60,14,8
+Millonarios,61-75,11,7
 Millonarios,76-90,11,8
 Once Caldas,1-15,11,6
 Once Caldas,16-30,2,7

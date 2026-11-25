@@ -18048,3 +18048,22 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 18047,401934689,5264,39,0,roja,Red Card,False,False,Andrés Marín
 18048,401934689,5264,72,0,amarilla,Yellow Card,False,False,Mateus Uribe
 18049,401934689,5264,90,1,amarilla,Yellow Card,False,False,William Tesillo
+18050,401934688,5484,14,0,gol,Goal,False,False,Francisco Chaverra
+18051,401934688,5484,19,0,gol,Goal,False,False,Rodrigo Contreras
+18052,401934688,6137,28,0,gol,Goal - Header,False,False,José Daniel García
+18053,401934688,5484,43,0,amarilla,Yellow Card,False,False,Mateo García
+18054,401934688,5484,49,0,gol,Goal,False,False,Rodrigo Urena
+18055,401934688,6137,67,0,amarilla,Yellow Card,False,False,Fredy Hinestroza
+18056,401934688,6137,68,0,amarilla,Yellow Card,False,False,José Ortiz
+18057,401934688,5484,70,0,gol,Penalty - Scored,True,False,Rodrigo Contreras
+18058,401934688,6137,81,0,amarilla,Yellow Card,False,False,Luciano Pons
+18059,401934688,5484,90,2,amarilla,Yellow Card,False,False,Francisco Chaverra
+18060,401934706,8109,21,0,amarilla,Yellow Card,False,False,Jhon Murillo
+18061,401934706,2672,25,0,amarilla,Yellow Card,False,False,Ronaldo Pájaro
+18062,401934706,8109,38,0,gol,Goal - Header,False,False,Tomás Ángel
+18063,401934706,8109,42,0,amarilla,Yellow Card,False,False,Rafael Carrascal
+18064,401934706,2672,44,0,amarilla,Yellow Card,False,False,Fabián Viáfara
+18065,401934706,8109,48,0,gol,Goal - Header,False,False,Tomás Ángel
+18066,401934706,2672,51,0,gol,Goal,False,False,Steven Rodríguez
+18067,401934706,2672,73,0,amarilla,Yellow Card,False,False,Johan Andrés Martínez
+18068,401934706,8109,89,0,amarilla,Yellow Card,False,False,Yani Quintero
