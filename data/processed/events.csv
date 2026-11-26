@@ -1719,7 +1719,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 1718,635124,5264,73,0,amarilla,Yellow Card,False,False,Daniel Mantilla
 1719,635124,5484,90,2,amarilla,Yellow Card,False,False,Jader Valencia
 1720,635124,5264,90,5,amarilla,Yellow Card,False,False,Kevin Mier
-1721,635121,5481,10,0,amarilla,Yellow Card,False,False,Julián Palacio
+1721,635121,5481,10,0,amarilla,Yellow Card,False,False,Julián Palacios
 1722,635121,7445,13,0,amarilla,Yellow Card,False,False,Juan Mahecha
 1723,635121,7445,17,0,amarilla,Yellow Card,False,False,Andrés Correa
 1724,635121,5481,25,0,amarilla,Yellow Card,False,False,Iván Rojas
@@ -1761,7 +1761,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 1760,635127,4815,82,0,amarilla,Yellow Card,False,False,Carlos Esparragoza
 1761,635127,4815,90,4,roja,Red Card,False,False,Fredy Hinestroza
 1762,635127,5264,90,5,roja,Red Card,False,False,Nelson Palacio
-1763,635126,5481,10,0,amarilla,Yellow Card,False,False,Julián Palacio
+1763,635126,5481,10,0,amarilla,Yellow Card,False,False,Julián Palacios
 1764,635126,5489,10,0,gol,Goal - Header,False,False,Sergio Mosquera
 1765,635126,5481,45,0,amarilla,Yellow Card,False,False,Juan Zapata
 1766,635126,5489,63,0,amarilla,Yellow Card,False,False,Jonathan Marulanda
@@ -6670,7 +6670,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 6669,662814,5486,55,0,amarilla,Yellow Card,False,False,Diego Hernández
 6670,662814,5486,66,0,gol,Goal,False,False,Angelo Rodríguez
 6671,662814,5486,84,0,amarilla,Yellow Card,False,False,Jeison Suárez
-6672,662814,5481,88,0,amarilla,Yellow Card,False,False,Julián Palacio
+6672,662814,5481,88,0,amarilla,Yellow Card,False,False,Julián Palacios
 6673,662814,5486,90,4,gol,Goal,False,False,Ewil Murillo
 6674,662814,5481,90,7,amarilla,Yellow Card,False,False,Hayen Palacios
 6675,662814,5486,90,8,gol,Penalty - Scored,True,False,Kener Valencia
@@ -7542,7 +7542,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 7541,693615,5481,49,0,amarilla,Yellow Card,False,False,William Hurtado
 7542,693615,4928,64,0,amarilla,Yellow Card,False,False,
 7543,693615,5481,87,0,amarilla,Yellow Card,False,False,Daniel Arcila
-7544,693615,5481,87,0,amarilla,Yellow Card,False,False,Julián Palacio
+7544,693615,5481,87,0,amarilla,Yellow Card,False,False,Julián Palacios
 7545,693621,5264,4,0,gol,Goal,False,False,Édier Ocampo
 7546,693621,5264,14,0,gol,Goal,False,False,Robert Mejía
 7547,693621,5264,27,0,amarilla,Yellow Card,False,False,Joan Castro
@@ -7774,7 +7774,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 7773,693653,8109,22,0,amarilla,Yellow Card,False,False,Harold Rivera
 7774,693653,8109,25,0,gol,Goal - Header,False,False,Harold Rivera
 7775,693653,8109,27,0,amarilla,Yellow Card,False,False,Jeisson Palacios
-7776,693653,5481,36,0,amarilla,Yellow Card,False,False,Julián Palacio
+7776,693653,5481,36,0,amarilla,Yellow Card,False,False,Julián Palacios
 7777,693653,8109,81,0,amarilla,Yellow Card,False,False,Esneyder Mena
 7778,693653,5481,90,3,gol,Penalty - Scored,True,False,Bayron Garces
 7779,693646,10309,19,0,gol,Penalty - Scored,True,False,Wilson Morelo
@@ -8084,7 +8084,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 8083,693692,2919,71,0,amarilla,Yellow Card,False,False,Juan Patiño
 8084,693692,5481,72,0,roja,Red Card,False,False,Bayron Garces
 8085,693692,2919,88,0,gol,Goal,False,False,Johan Esteban Beltran
-8086,693692,5481,90,5,amarilla,Yellow Card,False,False,Julián Palacio
+8086,693692,5481,90,5,amarilla,Yellow Card,False,False,Julián Palacios
 8087,693686,6137,41,0,amarilla,Yellow Card,False,False,Juan Camilo Mosquera
 8088,693686,5264,67,0,amarilla,Yellow Card,False,False,Joan Castro
 8089,693686,5264,70,0,amarilla,Yellow Card,False,False,Agustín Álvarez Wallace
@@ -8234,7 +8234,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 8233,693705,5481,45,0,amarilla,Yellow Card,False,False,Geindry Cuervo
 8234,693705,5481,48,0,amarilla,Yellow Card,False,False,Edison López
 8235,693705,5481,52,0,amarilla,Yellow Card,False,False,Daniel Zapata
-8236,693705,5481,52,0,amarilla,Yellow Card,False,False,Julián Palacio
+8236,693705,5481,52,0,amarilla,Yellow Card,False,False,Julián Palacios
 8237,693705,5481,85,0,roja,Red Card,False,False,Geindry Cuervo
 8238,693705,6137,90,2,gol,Goal,False,False,Estefáno Arango
 8239,693706,5264,4,0,amarilla,Yellow Card,False,False,Emilio Aristizábal
@@ -9590,7 +9590,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 9589,714297,9773,45,2,amarilla,Yellow Card,False,False,Andrés Alarcón
 9590,714297,9773,56,0,gol,Goal,False,False,Cristian Borja
 9591,714297,9773,60,0,amarilla,Yellow Card,False,False,Cristian Borja
-9592,714297,5481,71,0,amarilla,Yellow Card,False,False,Julián Palacio
+9592,714297,5481,71,0,amarilla,Yellow Card,False,False,Julián Palacios
 9593,714297,9773,85,0,gol,Goal,False,False,Álvaro Meléndez
 9594,714297,9773,89,0,amarilla,Yellow Card,False,False,Sebastian Moreno
 9595,714297,5481,90,1,amarilla,Yellow Card,False,False,Geindry Cuervo
@@ -10256,7 +10256,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 10255,714371,9761,72,0,amarilla,Yellow Card,False,False,Edwin Torres
 10256,714371,7445,89,0,gol,Goal,False,False,Felipe Acosta
 10257,714371,9761,90,9,gol,Penalty - Scored,True,False,Enmerson Batalla
-10258,714372,5481,27,0,amarilla,Yellow Card,False,False,Julián Palacio
+10258,714372,5481,27,0,amarilla,Yellow Card,False,False,Julián Palacios
 10259,714372,4815,74,0,amarilla,Yellow Card,False,False,Jhon Navia
 10260,714372,5481,88,0,amarilla,Yellow Card,False,False,William Hurtado
 10261,714366,9762,10,0,amarilla,Yellow Card,False,False,Jorge Ramos
@@ -10855,7 +10855,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 10854,730328,5264,90,9,roja,Red Card,False,False,Dairon Asprilla
 10855,730328,7445,90,9,roja,Red Card,False,False,Deyson Copete
 10856,730323,5481,23,0,amarilla,Yellow Card,False,False,Geindry Cuervo
-10857,730323,5481,36,0,amarilla,Yellow Card,False,False,Julián Palacio
+10857,730323,5481,36,0,amarilla,Yellow Card,False,False,Julián Palacios
 10858,730323,2672,59,0,gol,Goal,False,False,Emiliano Rodríguez
 10859,730323,5481,76,0,amarilla,Yellow Card,False,False,Edison López
 10860,730323,2672,79,0,amarilla,Yellow Card,False,False,Víctor Mejía
@@ -11790,7 +11790,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 11789,730440,8109,67,0,gol,Goal,False,False,Duván Vergara
 11790,730440,5481,67,0,amarilla,Yellow Card,False,False,Rubén Escobar
 11791,730440,5481,76,0,amarilla,Yellow Card,False,False,Neymar Uribe
-11792,730440,5481,80,0,amarilla,Yellow Card,False,False,Julián Palacio
+11792,730440,5481,80,0,amarilla,Yellow Card,False,False,Julián Palacios
 11793,730440,8109,90,5,amarilla,Yellow Card,False,False,Cristian Barrios
 11794,730436,5486,28,0,amarilla,Yellow Card,False,False,Julián Bazán
 11795,730436,17374,31,0,amarilla,Yellow Card,False,False,Oscar Barreto
@@ -11896,7 +11896,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 11895,730443,6137,23,0,gol,Goal - Header,False,False,Luciano Pons
 11896,730443,5481,24,0,amarilla,Yellow Card,False,False,
 11897,730443,5481,57,0,amarilla,Yellow Card,False,False,Neymar Uribe
-11898,730443,5481,65,0,amarilla,Yellow Card,False,False,Julián Palacio
+11898,730443,5481,65,0,amarilla,Yellow Card,False,False,Julián Palacios
 11899,730443,6137,90,0,amarilla,Yellow Card,False,False,Fredy Hinestroza
 11900,730443,6137,90,4,amarilla,Yellow Card,False,False,Aldair Gutiérrez
 11901,730447,7915,17,0,amarilla,Yellow Card,False,False,Jhildrey Lasso
@@ -11962,7 +11962,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 11961,730453,5485,30,0,amarilla,Yellow Card,False,False,Joyce Ossa
 11962,730453,5485,45,1,amarilla,Yellow Card,False,False,Juan Castilla
 11963,730453,9762,60,0,amarilla,Yellow Card,False,False,Jesús Rivas
-11964,730467,5481,5,0,amarilla,Yellow Card,False,False,Julián Palacio
+11964,730467,5481,5,0,amarilla,Yellow Card,False,False,Julián Palacios
 11965,730467,5481,19,0,gol,Goal,False,False,Daniel Arcila
 11966,730467,17374,27,0,amarilla,Yellow Card,False,False,Jannenson Sarmiento
 11967,730467,5481,32,0,amarilla,Yellow Card,False,False,Neymar Uribe
@@ -12154,7 +12154,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 12153,730487,5481,14,0,amarilla,Yellow Card,False,False,Emanuel Londoño
 12154,730487,9762,18,0,amarilla,Yellow Card,False,False,Wilson Morelo
 12155,730487,9762,41,0,amarilla,Yellow Card,False,False,Harrinson Mancilla
-12156,730487,5481,47,0,amarilla,Yellow Card,False,False,Julián Palacio
+12156,730487,5481,47,0,amarilla,Yellow Card,False,False,Julián Palacios
 12157,730487,9762,55,0,amarilla,Yellow Card,False,False,Jesús Rivas
 12158,730487,5481,61,0,amarilla,Yellow Card,False,False,Jhon Gamboa
 12159,730487,5481,71,0,amarilla,Yellow Card,False,False,Daniel Arcila
@@ -12853,7 +12853,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 12852,750604,2690,70,0,roja,Red Card,False,False,Léider Berrío
 12853,750604,2690,71,0,amarilla,Yellow Card,False,False,Washington Aguerre
 12854,750604,5481,74,0,gol,Penalty - Scored,True,False,Daniel Arcila
-12855,750604,5481,80,0,amarilla,Yellow Card,False,False,Julián Palacio
+12855,750604,5481,80,0,amarilla,Yellow Card,False,False,Julián Palacios
 12856,750604,5481,82,0,amarilla,Yellow Card,False,False,Andrés Tovar
 12857,750604,2690,84,0,gol,Penalty - Scored,True,False,Francisco Fydriszewski
 12858,750604,5481,85,0,gol,Goal,False,False,Daniel Arcila
@@ -13170,7 +13170,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 13169,750617,5485,80,0,amarilla,Yellow Card,False,False,Patrick Preciado
 13170,750617,5485,84,0,amarilla,Yellow Card,False,False,Diego Martinez
 13171,750617,5485,86,0,roja,Red Card,False,False,Johan Caicedo
-13172,750617,5481,90,8,amarilla,Yellow Card,False,False,Julián Palacio
+13172,750617,5481,90,8,amarilla,Yellow Card,False,False,Julián Palacios
 13173,750641,9761,23,0,amarilla,Yellow Card,False,False,Leonardo Saldaña
 13174,750641,9761,57,0,amarilla,Yellow Card,False,False,Kevin Moreno
 13175,750641,2919,86,0,amarilla,Yellow Card,False,False,Juan Castano
@@ -13281,7 +13281,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 13280,750651,5481,29,0,amarilla,Yellow Card,False,False,Geindry Cuervo
 13281,750651,5486,32,0,amarilla,Yellow Card,False,False,Omar Albornoz
 13282,750651,5486,42,0,amarilla,Yellow Card,False,False,Edwin Velasco
-13283,750651,5481,45,3,amarilla,Yellow Card,False,False,Julián Palacio
+13283,750651,5481,45,3,amarilla,Yellow Card,False,False,Julián Palacios
 13284,750651,5481,59,0,amarilla,Yellow Card,False,False,Bleiner Agrón
 13285,750651,5481,69,0,roja,Red Card,False,False,Bleiner Agrón
 13286,750651,5481,75,0,amarilla,Yellow Card,False,False,Neymar Uribe
@@ -13501,7 +13501,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 13500,750674,9762,45,2,gol,Goal,False,False,Yony González
 13501,750674,5481,60,0,amarilla,Yellow Card,False,False,Didier Palacios
 13502,750674,9762,63,0,amarilla,Yellow Card,False,False,Dylan Lozano
-13503,750674,5481,77,0,amarilla,Yellow Card,False,False,Julián Palacio
+13503,750674,5481,77,0,amarilla,Yellow Card,False,False,Julián Palacios
 13504,750674,9762,90,1,amarilla,Yellow Card,False,False,Hernán Ezequiel Lópes
 13505,750674,5481,90,1,roja,Red Card,False,False,Didier Palacios
 13506,750674,9762,90,5,amarilla,Yellow Card,False,False,Diego Hernández
@@ -13580,7 +13580,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 13579,750681,9761,56,0,gol,Penalty - Scored,True,False,Carlos Gonzalez
 13580,750681,9761,74,0,amarilla,Yellow Card,False,False,Lucas Valencia
 13581,750681,9761,88,0,amarilla,Yellow Card,False,False,Josy Pérez
-13582,750682,5481,15,0,amarilla,Yellow Card,False,False,Julián Palacio
+13582,750682,5481,15,0,amarilla,Yellow Card,False,False,Julián Palacios
 13583,750682,5481,31,0,amarilla,Yellow Card,False,False,Dairon Valencia
 13584,750682,5481,38,0,amarilla,Yellow Card,False,False,Juan Holguín
 13585,750682,5481,43,0,amarilla,Yellow Card,False,False,Edison López
@@ -14816,7 +14816,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 14815,401850725,4815,90,4,amarilla,Yellow Card,False,False,Juan David Rios
 14816,401850726,2919,58,0,amarilla,Yellow Card,False,False,Jorge Cardona
 14817,401850726,5488,62,0,amarilla,Yellow Card,False,False,Christian Mafla
-14818,401850726,5488,77,0,gol,Goal,False,False,Franco Fagúndez
+14818,401850726,5488,77,0,gol,Goal,False,False,Franco Fagundez
 14819,401850726,5488,87,0,amarilla,Yellow Card,False,False,Edwin Mosquera
 14820,401850726,2919,90,0,amarilla,Yellow Card,False,False,Jader Quiñónes
 14821,401850726,2919,90,3,gol,Goal - Header,False,False,Kevin Andres Cuesta Rodriguez
@@ -14867,7 +14867,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 14866,401850733,5488,61,0,amarilla,Yellow Card,False,False,Edwin Mosquera
 14867,401850733,5488,63,0,gol,Goal - Header,False,False,Christian Mafla
 14868,401850733,5488,67,0,gol,Goal,False,False,Edwin Mosquera
-14869,401850733,5488,70,0,amarilla,Yellow Card,False,False,Franco Fagúndez
+14869,401850733,5488,70,0,amarilla,Yellow Card,False,False,Franco Fagundez
 14870,401850733,5488,79,0,roja,Red Card,False,False,Edwin Mosquera
 14871,401850733,5486,84,0,roja,Red Card,False,False,Walmer Pacheco
 14872,401850733,5488,90,0,amarilla,Yellow Card,False,False,Emanuel Olivera
@@ -16073,7 +16073,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 16072,401850872,4928,86,0,gol,Own Goal,False,True,Hernán Ezequiel Lópes
 16073,401850872,9762,88,0,amarilla,Yellow Card,False,False,Andrés Ricaurte
 16074,401850873,5488,4,0,gol,Goal,False,False,Omar Fernández
-16075,401850873,5488,22,0,gol,Goal,False,False,Franco Fagúndez
+16075,401850873,5488,22,0,gol,Goal,False,False,Franco Fagundez
 16076,401850873,5488,33,0,gol,Goal,False,False,Hugo Rodallega
 16077,401850873,5488,42,0,amarilla,Yellow Card,False,False,Kilian Toscano
 16078,401850873,5488,82,0,amarilla,Yellow Card,False,False,Martín Palacios
@@ -16144,7 +16144,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 16143,401850755,4928,90,5,roja,Red Card,False,False,Cristian Santander
 16144,401850755,8109,90,5,roja,Red Card,False,False,José Cavadía
 16145,401850880,5485,28,0,amarilla,Yellow Card,False,False,Johan Caicedo
-16146,401850880,5488,64,0,gol,Goal,False,False,Franco Fagúndez
+16146,401850880,5488,64,0,gol,Goal,False,False,Franco Fagundez
 16147,401850880,5488,70,0,gol,Goal,False,False,Hugo Rodallega
 16148,401850880,5485,77,0,amarilla,Yellow Card,False,False,Matías Pisano
 16149,401850880,5485,79,0,amarilla,Yellow Card,False,False,Juan Garavito
@@ -16282,7 +16282,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 16281,401850894,7445,18,0,amarilla,Yellow Card,False,False,Dannovi Quinones
 16282,401850894,7445,18,0,amarilla,Yellow Card,False,False,Johan Caballero
 16283,401850894,7445,49,0,gol,Goal,False,False,Fabricio Sanguinetti
-16284,401850894,5488,50,0,amarilla,Yellow Card,False,False,Franco Fagúndez
+16284,401850894,5488,50,0,amarilla,Yellow Card,False,False,Franco Fagundez
 16285,401850894,7445,50,0,amarilla,Yellow Card,False,False,Ian Poveda-Ocampo
 16286,401850894,5488,70,0,gol,Penalty - Scored,True,False,Hugo Rodallega
 16287,401850894,5488,74,0,gol,Goal - Header,False,False,Emanuel Olivera
@@ -16477,7 +16477,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 16476,401877988,7445,90,3,amarilla,Yellow Card,False,False,Ruben Manjarres
 16477,401877988,7445,90,4,amarilla,Yellow Card,False,False,
 16478,401877957,9762,11,0,amarilla,Yellow Card,False,False,John Ontaneda
-16479,401877957,5488,21,0,amarilla,Yellow Card,False,False,Franco Fagúndez
+16479,401877957,5488,21,0,amarilla,Yellow Card,False,False,Franco Fagundez
 16480,401877957,5488,26,0,amarilla,Yellow Card,False,False,Kilian Toscano
 16481,401877957,9762,28,0,amarilla,Yellow Card,False,False,Javier Mena
 16482,401877957,9762,54,0,gol,Goal,False,False,Andrés Ricaurte
@@ -16734,7 +16734,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 16733,401877854,6137,90,2,amarilla,Yellow Card,False,False,Aldair Zárate
 16734,401877854,6137,90,4,amarilla,Yellow Card,False,False,Fabián Sambueza
 16735,401877964,8109,21,0,amarilla,Yellow Card,False,False,Rafael Carrascal
-16736,401877964,5488,33,0,amarilla,Yellow Card,False,False,Franco Fagúndez
+16736,401877964,5488,33,0,amarilla,Yellow Card,False,False,Franco Fagundez
 16737,401877964,8109,38,0,amarilla,Yellow Card,False,False,Luis Quiñones
 16738,401877964,8109,74,0,amarilla,Yellow Card,False,False,Jan Lucumí
 16739,401878002,6101,22,0,amarilla,Yellow Card,False,False,Joao Abonía
@@ -16852,7 +16852,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 16851,401877963,5488,43,0,amarilla,Yellow Card,False,False,Nahuel Bustos
 16852,401877963,4815,58,0,amarilla,Yellow Card,False,False,Luis Muriel
 16853,401877963,4815,66,0,gol,Goal,False,False,Luis Muriel
-16854,401877963,5488,88,0,gol,Goal - Header,False,False,Franco Fagúndez
+16854,401877963,5488,88,0,gol,Goal - Header,False,False,Franco Fagundez
 16855,401877963,4815,90,6,amarilla,Yellow Card,False,False,Mauro Silveira
 16856,401878039,5264,5,0,gol,Goal,False,False,Andrés Sarmiento
 16857,401878039,9761,8,0,amarilla,Yellow Card,False,False,Ever Meza
@@ -16933,7 +16933,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 16932,401877839,5488,37,0,amarilla,Yellow Card,False,False,
 16933,401877839,5488,45,2,gol,Goal,False,False,Johan Torres
 16934,401877839,5484,46,0,amarilla,Yellow Card,False,False,Sergio Mosquera
-16935,401877839,5488,50,0,gol,Goal,False,False,Franco Fagúndez
+16935,401877839,5488,50,0,gol,Goal,False,False,Franco Fagundez
 16936,401877839,5484,52,0,amarilla,Yellow Card,False,False,Jhomier Guerrero
 16937,401877839,5484,60,0,amarilla,Yellow Card,False,False,Mateo García
 16938,401877839,5488,71,0,gol,Goal,False,False,Emerson Rodríguez
@@ -16983,7 +16983,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 16982,401877867,5485,90,1,amarilla,Yellow Card,False,False,Yeiler Goez
 16983,401877867,5485,90,2,roja,Red Card,False,False,Heiler Moreno
 16984,401877867,6101,90,8,amarilla,Yellow Card,False,False,Kevin Londoño
-16985,401877843,5488,17,0,gol,Goal,False,False,Franco Fagúndez
+16985,401877843,5488,17,0,gol,Goal,False,False,Franco Fagundez
 16986,401877843,5488,23,0,gol,Goal,False,False,Nahuel Bustos
 16987,401877843,4928,34,0,amarilla,Yellow Card,False,False,Joan Cajares
 16988,401877843,4928,66,0,amarilla,Yellow Card,False,False,Andrés Copete
@@ -17246,7 +17246,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 17245,401877961,2672,64,0,amarilla,Yellow Card,False,False,Juan Dinenno
 17246,401877961,5488,76,0,amarilla,Yellow Card,False,False,Kilian Toscano
 17247,401877961,5488,87,0,roja,Red Card,False,False,Daniel Torres
-17248,401877961,5488,90,5,amarilla,Yellow Card,False,False,Franco Fagúndez
+17248,401877961,5488,90,5,amarilla,Yellow Card,False,False,Franco Fagundez
 17249,401877777,9762,3,0,amarilla,Yellow Card,False,False,Javier Mena
 17250,401877777,8109,9,0,amarilla,Yellow Card,False,False,Rafael Carrascal
 17251,401877777,9762,25,0,amarilla,Yellow Card,False,False,Frank Lozano
@@ -17644,10 +17644,10 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 17643,401878012,2672,63,0,gol,Goal,False,False,Steven Rodríguez
 17644,401878012,7915,67,0,amarilla,Yellow Card,False,False,Juan Ramírez
 17645,401878012,7915,80,0,roja,Red Card,False,False,Howell Mena
-17646,401877844,5488,5,0,gol,Goal,False,False,Franco Fagúndez
+17646,401877844,5488,5,0,gol,Goal,False,False,Franco Fagundez
 17647,401877844,10309,61,0,amarilla,Yellow Card,False,False,Jonathan Lovera
-17648,401877844,5488,77,0,amarilla,Yellow Card,False,False,Franco Fagúndez
-17649,401877844,5488,81,0,gol,Goal,False,False,Franco Fagúndez
+17648,401877844,5488,77,0,amarilla,Yellow Card,False,False,Franco Fagundez
+17649,401877844,5488,81,0,gol,Goal,False,False,Franco Fagundez
 17650,401877844,10309,90,2,gol,Goal,False,False,Andrés Rentería
 17651,401877844,5488,90,2,amarilla,Yellow Card,False,False,Omar Fernández
 17652,401877877,5264,13,0,gol,Goal,False,False,Edwin Cardona
@@ -17726,7 +17726,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 17725,401878065,7915,82,0,roja,Red Card,False,False,Alejandro Moralez
 17726,401878065,10309,90,3,amarilla,Yellow Card,False,False,Johan Esteban Beltran
 17727,401878065,10309,90,6,amarilla,Yellow Card,False,False,Juan Franco
-17728,401877841,5488,31,0,gol,Goal,False,False,Franco Fagúndez
+17728,401877841,5488,31,0,gol,Goal,False,False,Franco Fagundez
 17729,401877841,6137,47,0,roja,Red Card,False,False,Carlos Romaña
 17730,401877841,5488,55,0,amarilla,Yellow Card,False,False,Hugo Rodallega
 17731,401877841,6137,63,0,amarilla,Yellow Card,False,False,Fabián Sambueza
@@ -17776,7 +17776,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 17775,401877845,5264,38,0,amarilla,Yellow Card,False,False,Andres Román
 17776,401877845,5488,69,0,amarilla,Yellow Card,False,False,Jáder Obrian
 17777,401877845,5264,71,0,amarilla,Yellow Card,False,False,Andrés Marín
-17778,401877845,5488,82,0,amarilla,Yellow Card,False,False,Franco Fagúndez
+17778,401877845,5488,82,0,amarilla,Yellow Card,False,False,Franco Fagundez
 17779,401877845,5264,84,0,amarilla,Yellow Card,False,False,Emanuel Benitez
 17780,401877995,10309,3,0,amarilla,Yellow Card,False,False,Juan Franco
 17781,401877995,5486,31,0,amarilla,Yellow Card,False,False,Jhon Largacha
@@ -17899,7 +17899,7 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 17898,401878041,5486,90,2,amarilla,Yellow Card,False,False,Marco Pérez
 17899,401878041,5264,90,4,gol,Own Goal,False,True,Yimy Gómez
 17900,401878041,5264,90,5,amarilla,Yellow Card,False,False,César Haydar
-17901,401877958,5488,11,0,gol,Goal,False,False,Franco Fagúndez
+17901,401877958,5488,11,0,gol,Goal,False,False,Franco Fagundez
 17902,401877958,5485,25,0,amarilla,Yellow Card,False,False,Hervin Goyes
 17903,401877958,5488,34,0,gol,Own Goal,False,True,Luis Enrique Medina Lucumi
 17904,401877958,5485,59,0,amarilla,Yellow Card,False,False,Samuel Andres Portes Cardozo
@@ -18067,3 +18067,26 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 18066,401934706,2672,51,0,gol,Goal,False,False,Steven Rodríguez
 18067,401934706,2672,73,0,amarilla,Yellow Card,False,False,Johan Andrés Martínez
 18068,401934706,8109,89,0,amarilla,Yellow Card,False,False,Yani Quintero
+18069,401934687,2919,21,0,amarilla,Yellow Card,False,False,Jader Quiñónes
+18070,401934687,5488,25,0,amarilla,Yellow Card,False,False,Víctor Moreno
+18071,401934687,5488,45,1,gol,Goal,False,False,Franco Fagundez
+18072,401934687,5488,45,4,amarilla,Yellow Card,False,False,
+18073,401934687,5488,48,0,amarilla,Yellow Card,False,False,Daniel Torres
+18074,401934687,5488,62,0,gol,Goal - Header,False,False,Emanuel Olivera
+18075,401934687,5488,79,0,gol,Goal,False,False,Hugo Rodallega
+18076,401934687,5488,89,0,amarilla,Yellow Card,False,False,Ewil Murillo
+18077,401934705,5264,12,0,amarilla,Yellow Card,False,False,Jorman Campuzano
+18078,401934705,2690,25,0,gol,Goal,False,False,Keiner Klinger
+18079,401934705,5264,31,0,gol,Goal - Header,False,False,William Tesillo
+18080,401934705,2690,35,0,amarilla,Yellow Card,False,False,Alfonso Simarra
+18081,401934705,2690,40,0,roja,Red Card,False,False,Jeison Medina
+18082,401934705,2690,41,0,amarilla,Yellow Card,False,False,Eder Chaux
+18083,401934705,5264,45,1,amarilla,Yellow Card,False,False,Elías Cabrera
+18084,401934705,2690,45,2,amarilla,Yellow Card,False,False,Léider Berrío
+18085,401934705,2690,48,0,amarilla,Yellow Card,False,False,Agustín Martegani
+18086,401934705,5264,56,0,gol,Goal - Header,False,False,Elías Cabrera
+18087,401934705,2690,64,0,amarilla,Yellow Card,False,False,Juan Fernando Quintero
+18088,401934705,5264,66,0,amarilla,Yellow Card,False,False,Neider Parra
+18089,401934705,5264,70,0,gol,Goal,False,False,Alfredo Morelos
+18090,401934705,2690,71,0,amarilla,Yellow Card,False,False,Joaquín Varela
+18091,401934705,5264,86,0,amarilla,Yellow Card,False,False,William Tesillo

@@ -1,9 +1,9 @@
 team_id,grupo,cabeza_de_serie,puesto_fase1,pts_esperados,p_final,p_campeon,partidos_jugados,simulaciones,name
-5264,A,True,1,10.04,0.4976,0.295,0,20000,Atlético Nacional
-2919,A,False,8,6.77,0.1087,0.0437,0,20000,Once Caldas
-5488,A,False,5,8.18,0.2104,0.1036,0,20000,Independiente Santa Fe
-2690,A,False,6,7.86,0.1832,0.0836,0,20000,Independiente Medellín
-8109,B,True,2,9.08,0.3917,0.2014,0,20000,América de Cali
-6137,B,False,4,7.95,0.2082,0.0914,0,20000,Atlético Bucaramanga
-5484,B,False,7,8.62,0.2742,0.1324,0,20000,Millonarios
-2672,B,False,3,6.89,0.1258,0.0488,0,20000,Deportivo Cali
+5264,A,True,1,10.1,0.4946,0.3024,0,20000,Atlético Nacional
+2919,A,False,8,6.6,0.1012,0.0365,0,20000,Once Caldas
+5488,A,False,5,8.37,0.222,0.1088,0,20000,Independiente Santa Fe
+2690,A,False,6,7.83,0.1823,0.0854,0,20000,Independiente Medellín
+8109,B,True,2,9.07,0.392,0.2005,0,20000,América de Cali
+6137,B,False,4,7.96,0.2122,0.0914,0,20000,Atlético Bucaramanga
+5484,B,False,7,8.61,0.2682,0.1284,0,20000,Millonarios
+2672,B,False,3,6.9,0.1277,0.0465,0,20000,Deportivo Cali

@@ -1,9 +1,9 @@
 equipo,tramo,a_favor,en_contra
 Nacional,1-15,11,9
-Nacional,16-30,10,7
-Nacional,31-45,13,8
-Nacional,46-60,14,6
-Nacional,61-75,16,3
+Nacional,16-30,10,8
+Nacional,31-45,14,8
+Nacional,46-60,15,6
+Nacional,61-75,17,3
 Nacional,76-90,23,6
 América,1-15,7,8
 América,16-30,14,4
@@ -25,15 +25,15 @@ Bucaramanga,61-75,7,6
 Bucaramanga,76-90,14,9
 Santa Fe,1-15,7,2
 Santa Fe,16-30,8,6
-Santa Fe,31-45,11,4
+Santa Fe,31-45,12,4
 Santa Fe,46-60,9,10
-Santa Fe,61-75,14,10
-Santa Fe,76-90,20,16
+Santa Fe,61-75,15,10
+Santa Fe,76-90,21,16
 Medellín,1-15,4,5
-Medellín,16-30,12,10
-Medellín,31-45,7,14
-Medellín,46-60,11,4
-Medellín,61-75,8,6
+Medellín,16-30,13,10
+Medellín,31-45,7,15
+Medellín,46-60,11,5
+Medellín,61-75,8,7
 Medellín,76-90,14,10
 Millonarios,1-15,6,2
 Millonarios,16-30,8,5
@@ -43,10 +43,10 @@ Millonarios,61-75,11,7
 Millonarios,76-90,11,8
 Once Caldas,1-15,11,6
 Once Caldas,16-30,2,7
-Once Caldas,31-45,10,7
+Once Caldas,31-45,10,8
 Once Caldas,46-60,6,7
-Once Caldas,61-75,10,7
-Once Caldas,76-90,17,10
+Once Caldas,61-75,10,8
+Once Caldas,76-90,17,11
 Tolima,1-15,8,6
 Tolima,16-30,11,7
 Tolima,31-45,9,7
