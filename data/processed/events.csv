@@ -18090,3 +18090,28 @@ event_id,match_id,team_id,minute,added_time,kind,detail,penalty,own_goal,player
 18089,401934705,5264,70,0,gol,Goal,False,False,Alfredo Morelos
 18090,401934705,2690,71,0,amarilla,Yellow Card,False,False,Joaquín Varela
 18091,401934705,5264,86,0,amarilla,Yellow Card,False,False,William Tesillo
+18092,401936055,2672,9,0,amarilla,Yellow Card,False,False,Steven Rodríguez
+18093,401936055,2672,14,0,gol,Goal - Header,False,False,Leyser Chaverra
+18094,401936055,2672,27,0,amarilla,Yellow Card,False,False,Leyser Chaverra
+18095,401936055,6137,29,0,amarilla,Yellow Card,False,False,Luciano Pons
+18096,401936055,2672,33,0,amarilla,Yellow Card,False,False,Daniel Giraldo
+18097,401936055,6137,34,0,amarilla,Yellow Card,False,False,Felix Charrupí
+18098,401936055,2672,43,0,amarilla,Yellow Card,False,False,Nicolas Benedetti
+18099,401936055,6137,51,0,gol,Goal,False,False,Luciano Pons
+18100,401936055,6137,56,0,amarilla,Yellow Card,False,False,Brandon Caicedo
+18101,401936055,6137,90,5,amarilla,Yellow Card,False,False,José Ortiz
+18102,401936054,8109,22,0,amarilla,Yellow Card,False,False,Jean
+18103,401936054,8109,25,0,amarilla,Yellow Card,False,False,Dany Rosero
+18104,401936054,8109,27,0,amarilla,Yellow Card,False,False,Edson Tortolero
+18105,401936054,5484,28,0,amarilla,Yellow Card,False,False,Rodrigo Contreras
+18106,401936054,5484,32,0,amarilla,Yellow Card,False,False,Jhomier Guerrero
+18107,401936054,8109,40,0,amarilla,Yellow Card,False,False,Josen Escobar
+18108,401936054,5484,45,4,roja,Red Card,False,False,Rodrigo Contreras
+18109,401936054,8109,49,0,roja,Red Card,False,False,Dany Rosero
+18110,401936054,5484,82,0,amarilla,Yellow Card,False,False,Darwin Quintero
+18111,401936054,5484,82,0,amarilla,Yellow Card,False,False,Leonardo Castro
+18112,401936054,8109,82,0,amarilla,Yellow Card,False,False,Marlon Torres
+18113,401936054,8109,82,0,amarilla,Yellow Card,False,False,Rafael Carrascal
+18114,401936054,5484,85,0,amarilla,Yellow Card,False,False,Sebastián Valencia
+18115,401936054,5484,90,3,amarilla,Yellow Card,False,False,Jorge Arias
+18116,401936054,8109,90,11,roja,Red Card,False,False,Yani Quintero

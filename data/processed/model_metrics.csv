@@ -1,4 +1,4 @@
 modelo,partidos,accuracy,log_loss,brier
-Frecuencias históricas,628,0.4682,1.0574,0.6382
-Elo,628,0.4777,1.0423,0.6219
-Poisson (este modelo),628,0.5,1.0119,0.6068
+Frecuencias históricas,630,0.4667,1.0579,0.6386
+Elo,630,0.4762,1.0432,0.6225
+Poisson (este modelo),630,0.4984,1.0125,0.6073
